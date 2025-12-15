@@ -19,7 +19,7 @@
 
         }
 
-        h1 {
+        h1.one {
             color: rgb(42, 15, 220);
             text-align: center;
         }
@@ -46,6 +46,14 @@
             color: rgb(113, 112, 112);
         }
 
+        pre {
+            background-color: rgb(250, 203, 133);
+            padding: 15px;
+            font-size: 16px;
+            border-left: rgb(255, 2, 2) 5px solid;
+            
+        }
+
 
 
 
@@ -55,7 +63,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Workshop: HTML Heading</h1>
+        <h1 class="one">Workshop: HTML Heading</h1>
         <p class="subtitle"> ฝึกใช้แท็ก &lt;h1&gt; – &lt;h6&gt; และการปรับขนาดหัวข้อด้วย CSS</p>
         <!-- Section 1 -->
         <section class="card">
@@ -89,28 +97,36 @@
         &lt;h6&gt;Note: Case Sensitive&lt;/h6&gt;
         </pre>
 
-        <p>เมื่อแสดงผล</p>
-        
-        <p class="note">📌 กล่องคําแนะนํา เช่น H1 ควรมีเพียง 1 อันในแต่ละหน้า เพื่อช่วย SEO และโครงสร้างเอกสาร
-        </p>
+        <p>เมื่อแสดงผลจะได้ขนาดลดหลั่นแบบนี้ :</p>
+        <h1>H1: Welcome to My Website</h1>
+        <h2>H2: HTML Basics</h2>
+        <h3>H3: What is HTML?</h3>
+        <h4>H4: HTML Syntax</h4>
+        <h5>H5: Example Code</h5>
+        <h6>H6: Note a</h6> 
         </section >
 
 
 
         <!-- Section 3 -->
         <section class="card">
-        <h2> 1. ความหมายของ Headings (H1–H6) เป็น หัวข้อรองของหน้าเว็บ</h2>
-        <p>HTML มีหัวข้อทั้งหมด 6 ระดับ</p>
-        <ul>
-            <li>H1 – หัวข้อใหญ่สุดใช้สําหรับชื่อหน้าเว็บหรือหัวข้อหลัก</li>
-            <li>H2 – หัวข้อรองแบ่ง Section ของเนื้อหา</li>
-            <li>H3 – หัวข้อย่อยภายใน H2</li>
-            <li>H4 – ย่อยลงไปอีกระดับ</li>
-            <li>H5 – ใช้น้อยแต่เน้นลําดับข้อมูล</li>
-            <li>H6 – เล็กสุดใช้กับหัวข้อระดับลึก</li>
-        </ul>
+        <h2>3. ถ้าอยากให้หัวข้อ “ใหญ่กว่า” หรือ “เล็กกว่า” ขนาดเดิม</h2>
+        <p>ใช ้CSS แทนการเลือก h1–h6 ผิด ลําดับ เช่น :</p>
+        <pre>
+        h3 {
+            font-size: 40px; /* ท าให้ H3 ใหญ่เท่า H1 ได ้ */
+            color: #c4005a;
+        }
+        h5 {
+            font-size: 12px; /* ท าให้ H5 เล็กลงอีก */
+        }
+        </pre>
+        <p>หรือสามารถกําหนดเฉพาะบางหัวข้อได ้:</p>
+
+        <pre>&lt;h3 style="font-size: 50px; color: blue;"&gt;Big Custom Heading&lt;/h3&gt;</pre>
         
-        <p class="note">📌 กล่องคําแนะนํา เช่น H1 ควรมีเพียง 1 อันในแต่ละหน้า เพื่อช่วย SEO และโครงสร้างเอกสาร
+        <p class="note">📌 จําไว้ว่าลําดับหัวข้อควรเป็น H1 → H2 → H3 ตามโครงสร้างเนื้อหา ไม่ควรใช ้H5 เพื่อให ้ “ตัวเล็กลง” หรือ ใช ้H1
+เพื่อให ้ “ตัวใหญ่ขึ้น” → ต้องแก ้ด้วย CSS เท่านั้น
         </p>
         </section >
 
