@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatting</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: rgb(205, 104, 241);
+        }
+
+        .container{
+            background-color: rgb(236, 134, 241);
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        .card{
+            background-color: aliceblue;
+            padding: 20px 40px;
+            margin: 20px 0;
+            border-radius: 15px;
+
+            border-top: 4px solid red;
+        }
+        .card.mudue-1{
+            border-top: 4px solid sandybrown;
+        }
+        .card.mudue-2{
+            border-top: 4px solid salmon;
+        }
+
+        header{}
+
+        h1{
+            color: aliceblue;
+            text-align: center;
+        }
+
+        .subtitle{
+            text-align: center;
+            color: antiquewhite;
+        }
+
+        .text-color{
+            color: rgb(230, 10, 50);
+        }
+
+        main{}
+
+        footer{
+            color: aliceblue;
+            text-decoration: none;
+            background-color: rgb(155, 1, 227);
+            display: inline-block;
+            text-align: center;
+
+            padding: 4px 24px;
+            border-radius:100px; ;
+        }
+
+        .color{
+            color: red;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>Workshop: HTML Text Formatting</h1>
+            <p class="subtitle">ฝึกใช้แท็ก (Formatting Tags) เพื่อสร้างเนื้อหาที่อ่านง่ายและเป็นระเบียบ
+</p>
+            <!-- card1 -->
+        </header>
+       
+        <main>
+            <div class="card"> 
+            <h2>1. สิ่งที่ต้องรู้ก่อนทํา Workshop</h2>
+            <p>HTML มีแท็กสําหรับจัดรูปแบบขอ้ความทําให้เนื้อหาดูเด่น อ่านง่าย และสื่อความหมายได้ดีขึ้น</p>
+            
+            <ul>
+                    <li>&lt;b&gt; -<b class="text-color"> ตัวหนา (เน้นเฉย ๆ)</b></li>
+                    <li>&lt;strong&gt; - <strong class="text-color">ตัวหนาแบบ “สําคัญ” เชิงความหมาย (semantic importance)</strong></li>
+                    <li>&lt;i&gt; -<i class="text-color"> ตัวเอียง (ใช้กับศัพท์เฉพาะหรือตัวเน้น )</i></li>
+                    <li>&lt;em&gt; - <em class="text-color">ตัวเอียงแบบเน้นนํ้าเสียง</em></li>
+                    <li>&lt;u&gt; - <u class="text-color">ขีดเส้นใต้</u></li>
+                    <li>&lt;ins&gt;- <ins class="text-color">ขีดเส้นใต้</ins></li>
+                    <li>&lt;mark&gt; - <mark class="text-color">ไฮไลต์ข้อความ</mark></li>
+                    <li>&lt;code&gt; - <code class="text-color">แสดงข้อความเป็นรูปแบบโค้ด</code></li>
+                    <li>&lt;small&gt; - <small class="text-color">ข้อความขนาดเล็ก</small></li>
+                    <li>&lt;s&gt; - <s class="text-color">ข้อความขีดฆ่า</s></li>
+                    <li>&lt;sub&gt; - ตัวห้อย เช่น H<sub class="text-color">2</sub>O</li>
+                    <li>&lt;sup&gt; - ตัวยก เช่น X<sup class="text-color">2</sup></li>
+            </ul>
+
+            <p>แท็กที่ไม่รองรับใน HTML5</p>
+            <ul>
+                <li><strike>not support in HTML5</strike></li>
+                <li><big>not support in HTML5</big></li>
+                <li><tt>not support in HTML5</tt></li>
+            </ul>
+
+            <p>นักศึกษาต้องใช้แท็ก Formatting อย่างน้อย 5 ชนิด</p>
+</div>
+<!-- card2 -->
+            <div class="card mudue-1">
+            <h2>2. ภารกิจของสําหรับนักศึกษาต้องทำ
+</h2>
+            <p>ให้ค้นหาเนื้อหาเกี่ยวกับ “เทคโนโลยีคอมพิวเตอร์สมัยใหม่” โดยต้องมี:</p>
+            <ul>
+                <li>หัวข้อ &lt;h1&gt; 1 อัน</li>
+                <li>ย่อหน้า &lt;p&gt; อย่างน้อย 3 ย่อหน้า</li>
+                <li>ใช้แท็ก formatting อย่างน้อย 5 ประเภท
+                <li>ข้อความไหนมีการจัด formatting ให้ใส่สีข้อความเป็นสีแดงชมพู</li>
+</li>
+            </ul>
+</div>
+<!-- card3 -->
+            <div class="card mudue-2">
+            <h2>3.ระบบปฏิบัติการคอมพิวเตอร์ยุคใหม่</h2>
+            <p>เน้นที่ความปลอดภัย, ประสิทธิภาพ, และการเชื่อมต่อ โดยมีระบบเด่นๆ คือ <b class="color">Windows 11</b> (<i class="color">เน้นความปลอดภัยด้วย TPM 2.0</i>)</p>
+            <p>macOS (<u class="color">สวยงาม, ปลอดภัย, ประสิทธิภาพสูง</u>)</p>
+            <p>Linux (<mark class="color">โอเพนซอร์ส, ปรับแต่งได้, ใช้เยอะในเซิร์ฟเวอร์</mark>), Android (<em class="color">มือถือ/อุปกรณ์พกพา, ปรับแต่งได้</em>)</p>
+            <p>iOS (<code class="color">อุปกรณ์ Apple, ใช้งานง่าย, ปลอดภัย</code>) รวมถึงระบบเครือข่ายอย่าง <small class="color">Windows Server</small>
+            </main>
+    </div>
+        <footer>
+            <a href="index.html" class="footer">&larr; Back to HTML Tutorial</a>
+        </footer>
+   
+    
+</body>
+</html>
