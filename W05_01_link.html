@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: rgb(243, 156, 218);
+        }
+
+        .container{
+            background-color: rgb(255, 255, 255);
+            width: 60%;
+            margin: 50px auto;
+        }
+
+        .card1{
+            background-color: rgb(255, 255, 255);
+            padding: 20px 40px;
+            margin: 20px 0;
+            border-radius: 15px;
+            
+            border-top: 4px solid red;
+        }
+
+        .card2{
+            background-color: rgb(214, 214, 214);
+            border-left: red 5px solid;
+            padding: 20px 40px;
+            margin: 20px 0;
+            
+        }
+
+        .card3{
+            background-color: rgb(126, 127, 127);
+            padding: 20px 40px;
+            margin: 20px 0;
+            border-left: 15px;
+            border-radius: 15px;
+        
+            background-color: rgb(175, 175, 175);
+        }
+
+        .card4{
+            background-color: rgb(194, 194, 194);
+            border-left: red 5px solid;
+            padding: 20px 40px;
+            margin: 20px 0;
+        }
+
+        .card5{
+            background-color: rgb(255, 255, 255);
+            padding: 20px 40px;
+            margin: 20px 0;
+        }
+
+        h1{
+            color: rgb(32, 0, 243);
+            text-align: center;
+        }
+
+        .subtitle{
+            text-align: center;
+            color: rgb(236, 166, 76);
+        }
+
+        .visit{
+            color: aliceblue;
+            text-decoration: none;
+            background-color: rgb(42, 0, 254);
+            display: inline-block;
+            text-align: center;
+
+            padding: 4px 24px;
+            border-radius: 15px; 
+        }
+
+        footer{
+            color: aliceblue;
+            text-decoration: none;
+            background-color: rgb(155, 1, 227);
+            display: inline-block;
+            text-align: center;
+
+            padding: 4px 24px;
+            border-radius:100px; ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Workshop: Various Links</h1>
+        <p class="subtitle">เรียนรู้ลิงค์หลายรูปแบบ พร้อมตัวอย่างและแบบฝึกหัด</p>
+        <!-- 1 -->
+     <div class="card1">
+        <h2>1.External Links</h2>
+        <div class="card3">
+            <a href="">Visit Wikipedia</a>
+                <p><code>target-"_blank" เปิดลิงค์ในแท็กใหม่</code></p>
+            </div>
+
+            <div class="card3">
+                <a href="" >Visit Google</a>
+                <p><code>target="self"</code></p>
+
+            </div>
+
+         </div>
+         <!-- 2 -->
+          <div class="card1">
+            <h2>2.Infernal Links & Anchor Links</h2>
+            <pre class="card2">
+        &lt;a href="about.html"&gt;About Us&lt;/a&gt;
+        &lt;a href="#jump"&gt;Jump to Section&lt;/a&gt;
+        &lt;h3 id="jump"&gt;This is the jump target&lt;/h3&gt;
+        </pre>
+            <a href="">Click to Jump</a>
+            <h3>This is the jump target</h3>
+
+          </div>
+
+          <!-- 3 -->
+           <div class="card1">
+            <h2>3.Email Links</h2>
+            <pre class="card2">
+            &lt;a href="mailto:student@example.com?subject=Hello"&gt;
+            Send an Email
+            &lt;/a&gt;
+            </pre> 
+                <a href="">Send an Email</a>
+           </div>
+           
+
+           <!-- 4 -->
+            <div class="card1">
+                <h2>4.Download Links</h2>
+                <pre class="card2">&lt;a href="files/sample.txt" download&gt;Download File&lt;/a&gt;</pre>
+
+                <h3><mark> Download Text File </mark></h3>
+                <small>
+                <p>ต้องมีไฟล์ในโฟลเดอร์จึงจะดาวน์โหลดได้จริง</p>
+            </small>
+            </div>
+            
+            
+
+            <!-- 5 -->
+             <div class="card1">
+                <h2>5.Button Link</h2>
+                <pre class="card2">สิงค์ที่ออกแบบให้คล้ายปุ่ม และกับปุ่มสมัคร ปุ่มอ่านเพิ่มเติม หรือปุ่มนำทาง
+                &lt;a href="https://www.example.com" class="btn-link"&gt;
+                Visit Website
+                &lt;/a&gt;
+            </pre>
+            <a href="" class="visit">Visit Website</a>
+            <p><small>ต้องสร้างปุ่มแท็ก <mark>button</mark></small></p>
+
+             </div>
+                
+             <div class="card5">
+                <pre class="card4">&lt;button onclick="document.location='index.html'"&gt;HTML Tutorial&lt;/button&gt;
+                - มักใช้เมื่อลิงก์ไป หน้าในเว็บเดียวกัน
+                - ผูกกับ DOM (document) โดยตรง
+
+                &lt;button onclick="location.href='https://www.example.com'"&gt;Visit Website&lt;/button&gt;
+                - นิยมใช้มากกว่า
+                - เหมาะทั้งลิงก์ ภายในและภายนอกเว็บ
+                - ผูกกับ window โดยตรง</pre>
+
+                <button type="button">HTML Tutorial</button>
+                <button type="button">Visit Website</button>
+             </div>
+            
+
+             <!-- 6 -->
+              <div class="card1">
+                <h2>6.Image Link</h2>
+                <p>คลิกที่รูปภาพเพื่อเปิดลิงก์</p>
+                <pre class="card2">
+                &lt;a href="https://youtube.com"&gt;
+                &lt;img src="images/sample.jpg" width="250"&gt;
+                &lt;/a&gt
+            </pre>
+                <a href="https://www.youtube.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" width="250">
+            </a>
+                <p>หากต้องใช้รูปแบบของตนเอง ต้องเก็บรูปไว้ในโฟลเดอร์ เช่น <mark>imges/photo.jpg</mark> </p>
+
+              </div>
+            
+              
+              
+             
+        
+    </div>
+    <footer>
+            <a href="index.html" class="footer">&larr; Back to HTML Tutorial</a>
+        </footer>
+    
+</body>
+
+</html>

@@ -46,12 +46,33 @@
             color: rgb(113, 112, 112);
         }
 
+        .note::before {
+            content: "✅";
+        }
+
         pre {
             background-color: rgb(250, 203, 133);
             padding: 15px;
             font-size: 16px;
             border-left: rgb(255, 2, 2) 5px solid;
             
+        }
+
+        .back-link{
+            color: aliceblue;
+            text-decoration: none;
+            background-color: rgb(155, 1, 227);
+            display: inline-block;
+            text-align: center;
+
+            padding: 4px 24px;
+            border-radius:100px; ;
+        }
+
+         .back-link:hover {
+            color: rgb(32, 0, 113);
+            background-color: aliceblue;
+           /* text-decoration: underline; */
         }
 
 
@@ -123,14 +144,14 @@
         </pre>
         <p>หรือสามารถกําหนดเฉพาะบางหัวข้อได ้:</p>
 
-        <pre>&lt;h3 style="font-size: 50px; color: blue;"&gt;Big Custom Heading&lt;/h3&gt;</pre>
+        <pre>,&lt;h3 style="font-size: 50px; color: blue;"&gt;Big Custom Heading&lt;/h3&gt;</pre>
         
         <p class="note">📌 จําไว้ว่าลําดับหัวข้อควรเป็น H1 → H2 → H3 ตามโครงสร้างเนื้อหา ไม่ควรใช ้H5 เพื่อให ้ “ตัวเล็กลง” หรือ ใช ้H1
 เพื่อให ้ “ตัวใหญ่ขึ้น” → ต้องแก ้ด้วย CSS เท่านั้น
         </p>
         </section >
 
-       <a href="index.html">&larr; Back to HTML Tutorial</a>
+       <a href="index.html" class="back-link">&larr; Back to HTML Tutorial</a>
     </div>
 
 
