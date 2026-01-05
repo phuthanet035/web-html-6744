@@ -14,9 +14,10 @@
         }
 
         .container{
-            background-color: rgb(255, 255, 255);
-            width: 60%;
-            margin: 50px auto;
+            background-color: rgb(243, 154, 218);
+            /* width: 60%; */
+            margin: 50px 20px;
+            padding: 10px;
         }
 
         .card1{
@@ -24,6 +25,9 @@
             padding: 20px 40px;
             margin: 20px 0;
             border-radius: 15px;
+
+            /* ตัวจัดการช่องว่างของแต่ล่ะ Card */
+            /* height: fit-content; */
             
             border-top: 4px solid red;
         }
@@ -48,13 +52,13 @@
 
         
         h1{
-            color: rgb(32, 0, 243);
+            color: rgb(38, 0, 255);
             text-align: center;
         }
 
         .subtitle{
             text-align: center;
-            color: rgb(236, 166, 76);
+            color: rgb(108, 108, 108);
         }
 
         .visit{
@@ -68,6 +72,7 @@
             border-radius: 15px; 
         }
 
+
         footer{
             color: aliceblue;
             text-decoration: none;
@@ -79,63 +84,115 @@
             border-radius:100px; ;
         }
 
+        .image-link img{
+            width: 260px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+        .image-link img:hover{
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px;
+        }
+
+        .card-grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+         .card-grid1{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .button1{
+            color: rgb(0, 0, 0);
+            border-radius: 100px;
+            background-color: aqua;
+            padding: 4px 24px;
+            box-shadow: 0 4px 12px;
+        }
+
+        pre{
+            white-space: pre-wrap;
+        }
+
+        /* tablet */
+        @media (max-width: 992px){
+            .card-grid{
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* mobile */
+         @media (max-width: 576px){
+            .card-grid1{
+                grid-template-columns: (2, 1fr);
+            }
+        }
+
+         @media (max-width: 576px){
+            .card-grid1{
+                grid-template-columns: 1fr;
+            }
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Workshop: Various Links</h1>
         <p class="subtitle">เรียนรู้ลิงค์หลายรูปแบบ พร้อมตัวอย่างและแบบฝึกหัด</p>
-        <!-- 1 -->
-     <div class="card1">
-        <h2>1.External Links</h2>
-        <div class="card3">
-            <a href="">Visit Wikipedia</a>
-                <p><code>target-"_blank" เปิดลิงค์ในแท็กใหม่</code></p>
-            </div>
-
+        <div class="card-grid">
+            <!-- 1 -->
+                 <div class="card1">
+            <h2>1.External Links</h2>
             <div class="card3">
-                <a href="" >Visit Google</a>
-                <p><code>target="self"</code></p>
+                <a href="https://www.wikipedia.org/" target-"_blank">Visit Wikipedia</a>
+                    <p><cod>target-"_blank" เปิดลิงค์ในแท็กใหม่</code></p>
+                </div>
+                <div class="card3">
+                    <a href="https://www.google.com/?hl=th">Visit Google</a>
+                    <p><code>target="self"</code></p>
+                </div>
 
-            </div>
-
-         </div>
-         
-         <!-- 2 -->
-          <div class="card1">
-            <h2>2.Infernal Links & Anchor Links</h2>
-            <pre class="card2">
-        &lt;a href="about.html"&gt;About Us&lt;/a&gt;
-        &lt;a href="#jump"&gt;Jump to Section&lt;/a&gt;
-        &lt;h3 id="jump"&gt;This is the jump target&lt;/h3&gt;
-        </pre>
-            <a href="">Click to Jump</a>
-            <h3>This is the jump target</h3>
-
-          </div>
-
-          <!-- 3 -->
-           <div class="card1">
-            <h2>3.Email Links</h2>
-            <pre class="card2">
-            &lt;a href="mailto:student@example.com?subject=Hello"&gt;
-            Send an Email
-            &lt;/a&gt;
-            </pre> 
-                <a href="">Send an Email</a>
-           </div>
-           
-
-           <!-- 4 -->
-            <div class="card1">
-                <h2>4.Download Links</h2>
-                <pre class="card2">&lt;a href="files/sample.txt" download&gt;Download File&lt;/a&gt;</pre>
-
-                <h3><mark> Download Text File </mark></h3>
-                <small>
-                <p>ต้องมีไฟล์ในโฟลเดอร์จึงจะดาวน์โหลดได้จริง</p>
-            </small>
-            </div>
+             </div>
+            
+             <!-- 2 -->
+              <div class="card1">
+                <h2>2.Infernal Links & Anchor Links</h2>
+                <pre class="card2">
+            &lt;a href="about.html"&gt;About Us&lt;/a&gt;
+            &lt;a href="#jump"&gt;Jump to Section&lt;/a&gt;
+            &lt;h3 id="jump"&gt;This is the jump target&lt;/h3&gt;
+            </pre>
+            <a href="#jump">Click to Jump</a>
+            <h3 id="jump">This is the jump target</h3>
+              </div>
+              <!-- 3 -->
+               <div class="card1">
+                <h2>3.Email Links</h2>
+                <pre class="card2">
+                &lt;a href="mailto:student@example.com?subject=Hello"&gt;
+                Send an Email
+                &lt;/a&gt;
+                </pre>
+                    <a href="mailto:674230035@webmail.npru.ac.th?subject=จดหมายสมัครงาน">
+                Send an Email
+                </a>
+               </div>
+            
+               <!-- 4 -->
+                <div class="card1">
+                    <h2>4.Download Links</h2>
+                    <pre class="card2">&lt;a href="files/sample.txt" download&gt;Download File&lt;/a&gt;</pre>
+                    <a href="files/download (3).jpg" download class="visit">Download File</a>
+                    <small>
+                    <p>ต้องมีไฟล์ในโฟลเดอร์จึงจะดาวน์โหลดได้จริง</p>
+                </small>
+                </div>
+        </div>
             
             
 
@@ -147,7 +204,9 @@
                 Visit Website
                 &lt;/a&gt;
             </pre>
-            <a href="" class="visit">Visit Website</a>
+            <a href="https://www.example.com" class="visit">
+                Visit Website
+                </a>
             <p><small>ต้องสร้างปุ่มแท็ก <mark>button</mark></small></p>
 
              </div>
@@ -162,8 +221,32 @@
                 - เหมาะทั้งลิงก์ ภายในและภายนอกเว็บ
                 - ผูกกับ window โดยตรง</pre>
 
-                <button type="button">HTML Tutorial</button>
-                <button type="button">Visit Website</button>
+                <div class="card-grid1">
+                    <div>
+                        <p>ปุ่ม document.location</p>
+                            <button onclick="document.location='index.html'" class="button1">HTML Tutorial</button>
+                    </div>
+                        <div>
+                            <p>ปุ่ม location.href</p>
+                                            <button onclick="location.href='https://www.example.com'">Visit Website</button>
+                        </div>
+                        <div>
+                            <p>ตัวอย่างปุ่มจาก http://cssnippets.shefali.dev</p>
+                                            <button onclick="location.href='https://cssnippets.shefali.dev/toggle'">SUBSCRIBE</button>
+                        </div>
+                        <div>
+                            <p>เพิ่มขอบทอง</p>
+                                            <button onclick="location.href='https://cssnippets.shefali.dev/inputfields'">SUBSCRIBE</button>
+                        </div>
+                        <div>
+                            <p>เพิ่มอนิเมชันเมื่อชี้ปุ่ม</p>
+                                            <button onclick="location.href='https://cssnippets.shefali.dev/dropdown'">SUBSCRIBE</button>
+                        </div>
+                        <div>
+                            <p>ปุ่มสีดำ ขอบทอง แสงวิ้ง</p>
+                                            <button onclick="location.href='https://cssnippets.shefali.dev/buttons'">SUBSCRIBE</button>
+                        </div>
+                </div>
              </div>
             
 
@@ -176,7 +259,7 @@
                 &lt;img src="images/sample.jpg" width="250"&gt;
                 &lt;/a&gt
             </pre>
-                <a href="https://www.youtube.com" target="_blank">
+                <a class="image-link" href="https://www.youtube.com" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" width="250">
             </a>
                 <p>หากต้องใช้รูปแบบของตนเอง ต้องเก็บรูปไว้ในโฟลเดอร์ เช่น <mark>imges/photo.jpg</mark> </p>
@@ -187,6 +270,7 @@
     <footer>
             <a href="index.html" class="footer">&larr; Back to HTML Tutorial</a>
         </footer>
+
     
 </body>
 
