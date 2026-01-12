@@ -1,0 +1,131 @@
+/* Global CSS Styles */
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: chocolate;
+}
+
+html {}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 200px auto 40px;
+}
+
+/* Share CSS */
+code {
+    background-color: #9e9c9c;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+
+pre {
+    background-color: #9e9c9c;
+    border-left: (9, 215, 252) 5px solid;
+    padding: 10px;
+
+    white-space: per-wrap;
+    word-wrap: break-word;
+    border-left: red 5px solid;
+}
+
+.badge{
+    color: blue;
+    border-radius: 4px;
+    padding: 2px 6px;
+    background-color: #bcbcbc;
+    font-size: 10px;
+    font-weight: bold;
+
+    vertical-align: middle;
+
+}
+
+.card{
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border-top: 10px;
+    
+}
+
+.noet{}
+
+/* Group1 Head Styles */
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 2px 5px 10px rgb(69, 69, 69);
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.list-mamu {
+
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.list-mamu li {
+    background-color: blue;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.list-mamu li a {
+
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+
+.list-mamu li:hover {
+        background-color: #ff0000;
+        }
+
+h1 {
+    color: #ff0000;
+    margin: ;
+}
+
+
+p {
+
+}
+/* Group2 */
+
+/* Group3 */
+
+/* Group4 */
+
+/* Group5 */
+
+/* Group6 */
+
+/* Group7 */
+
+/* Group8 */
+
+/* Group9 */
+
+/* Group10 */
