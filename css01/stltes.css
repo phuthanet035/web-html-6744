@@ -226,3 +226,23 @@ p {
 .se {
     margin: 10px;
 }
+
+.back-link {
+    color: aliceblue;
+    text-decoration: none;
+
+    display: block;
+    /* display: inline-block; */
+
+    text-align: center;
+    
+    padding: 4px 24px;
+    border-radius: 100px;
+    background-color: rgb(25, 0, 255);
+}
+
+.back-link:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 2, 2);
+    /* text-decoration: underline; */
+}
