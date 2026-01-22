@@ -1,0 +1,228 @@
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* html */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
+}
+
+/*body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    /* background-attachment: fixed; หาค่าตรงกลาง */
+    background-image: url(https://www.thekommon.co/pyramid/2022/03/Cover_01-1-1160x773.jpg);
+}
+
+
+
+/* comtainer */
+.container {
+    width: 1200px;
+    margin: 200px auto 40px;
+}
+
+/* card */
+.card {
+    background-color: #ddd7d7;
+    padding: 10px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+}
+
+/* pre */
+pre {
+    background-color: #9e9c9c;
+    border-left: (9, 215, 252) 5px solid;
+    padding: 10px;
+
+    white-space: per-wrap;
+    word-wrap: break-word;
+}
+
+/* header */
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 2px 5px 10px rgb(69, 69, 69);
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/* pre */
+pre {
+    background-color: #9e9c9c;
+    border-left: (9, 215, 252) 5px solid;
+    padding: 10px;
+
+    white-space: per-wrap;
+    word-wrap: break-word;
+}
+
+
+/* img */
+img {
+    max-width: 20%;
+    height: auto;
+    margin: 10px;
+
+    border-radius: 50%;
+
+}
+/* ปรับขนาดรูปสอง */
+.img-stlyes {
+    max-width: 75%;
+    height: auto;
+    margin: 20px;
+
+    border-radius: 50%;
+}
+
+
+/* position */
+.position {
+    display: flex;
+    align-items: center;
+}
+
+.position.center {
+    justify-content: start;
+}
+
+/* mamu */
+.list-mamu {
+
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.list-mamu li {
+    margin-top: 5px;
+    transition: transform 0.3s ease;
+}
+
+.list-mamu li:hover {
+
+    transform: translateY(-5px);
+}
+
+.list-mamu a {
+
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    background: linear-gradient(145deg, rgb(255, 100, 100), rgb(235, 23, 129));
+    padding: 8px 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px black;
+}
+
+.list-mamu li a:hover {
+    background: linear-gradient(145deg, rgb(21, 0, 255), rgb(0, 213, 255));
+    padding: 8px 16px;
+}
+
+/* --------- */
+h2 {
+    margin: 10pxs;
+    text-align: center;
+    top: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: center;
+}
+
+/* จุดคุมตาราง */
+.semester-title {
+    background: #0b2ea3;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* ปรับขนาดของกล่องในตาราง */
+.grade-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* ปรับกรอบตรง ชื่อ วิชา Sec. หน่วยกิต เกรด */
+.grade-table th {
+    background: #dfe4ff;
+    color: #333;
+    border: 1px solid #c7c7c7;
+    padding: 8px;
+    text-align: center;
+}
+
+/* ปรับสีขอบเส้นตารางที่คอยคุมรหัส วิชา หมู่เรียน */
+.grade-table td {
+    border: 1px solid #c7c7c7;
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* ปรับขนาดของตัวหนังสือให้อยู่ตรงกลาง */
+.grade-table td:nth-child(1),
+.grade-table td:nth-child(3),
+.grade-table td:nth-child(4),
+.grade-table td:nth-child(5) {
+    text-align: center;
+}
+
+/* ปรับกล่องนอกของกล่องที่เก็บเกรดเฉลี่ย */
+.summary {
+    display: flex;
+    justify-content: space-between;
+    background: #eee;
+    padding: 10px;
+}
+
+/* ปรับกล่องด้านในที่เก็บเกรดเฉลี่ย */
+.summary-box {
+    width: 50%;
+    background: #fff;
+    border: 1px solid #000000;
+    padding: 10px 10px;
+    font-size: 14px;
+}
+
+/* กรอบตรงชื่อ */
+.table {
+    width: 1000%;
+    max-width: 600px;
+    border-collapse: collapse;
+    font-family: 'Sarabun', sans-serif;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+}
+
+/* ปรับระยะห่างของข้อความ */
+.se {
+    margin: 10px;
+}
