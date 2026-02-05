@@ -1,0 +1,411 @@
+<!-- <!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakhon Pathom Trip Plan</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            padding: 25px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .route-group {
+            margin-bottom: 40px;
+        }
+
+        .day-header {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 50px;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .day1-bg { background-color: #3498db; }
+        .day2-bg { background-color: #e67e22; }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        /* เส้นแกนกลาง */
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 5px;
+            bottom: 5px;
+            width: 2px;
+            background: #e0e0e0;
+        }
+
+        .item {
+            position: relative;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+
+        /* จุดวงกลม */
+        .item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 6px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid;
+            z-index: 2;
+        }
+
+        .day1 .item::before { border-color: #3498db; }
+        .day2 .item::before { border-color: #e67e22; }
+
+        .location-card {
+            background: #fff;
+            padding: 10px 15px;
+            border-radius: 10px;
+            border: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .location-card:hover {
+            transform: translateX(5px);
+            background: #fafafa;
+        }
+
+        .name {
+            font-weight: 700;
+            color: #333;
+        }
+
+        .distance {
+            font-size: 12px;
+            color: #888;
+            background: #f8f9fa;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .connector {
+            margin: 5px 0 5px -23px;
+            font-size: 12px;
+            color: #bbb;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>นครปฐม 2 วัน 1 คืน</h1>
+
+    <div class="route-group day1">
+        <div class="day-header day1-bg">🔵 วันที่ 1: โซนเมือง (จากสุพรรณฯ)</div>
+        <div class="timeline">
+            <div class="item">
+                <div class="location-card"><span class="name">1. วัดป่าปฐมชัย</span></div>
+            </div>
+            <div class="connector">↓ 8.5 กม.</div>
+            <div class="item">
+                <div class="location-card"><span class="name">2. เชลล์ไม่เคยชิม (ลำพยา)</span></div>
+            </div>
+            <div class="connector">↓ 1.5 กม.</div>
+            <div class="item">
+                <div class="location-card"><span class="name">3. พระราชวังสนามจันทร์</span></div>
+            </div>
+            <div class="connector">↓ 2.2 กม.</div>
+            <div class="item">
+                <div class="location-card"><span class="name">4. วัดห้วยจระเข้</span></div>
+            </div>
+            <div class="connector">↓ 1.8 กม.</div>
+            <div class="item">
+                <div class="location-card"><span class="name">5. ร้านตั้งฮะเส็ง</span></div>
+            </div>
+            <div class="connector">↓ ติดกัน</div>
+            <div class="item">
+                <div class="location-card"><span class="name">6. วัดพระปฐมเจดีย์ฯ</span></div>
+            </div>
+            <div class="connector">↓ 1.5 กม.</div>
+            <div class="item">
+                <div class="location-card"><span class="name">7. วัดไผ่ล้อม</span></div>
+            </div>
+            <div class="connector">↓ 2.5 กม.</div>
+            <div class="item">
+                <div class="location-card"><span class="name">8. ถนนคนเดินวัดพระงาม</span></div>
+            </div>
+            <div class="connector">↓ 1.2 กม.</div>
+            <div class="item">
+                <div class="location-card"><span class="name">9. ตลาดโต้รุ่ง (ช.หอยทอด)</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="route-group day2">
+        <div class="day-header day2-bg">🟠 วันที่ 2: สายมูและทางกลับ</div>
+        <div class="timeline">
+            <div class="item">
+                <div class="location-card"><span class="name">10. กุ้งอบภูเขาไฟ</span></div>
+            </div>
+            <div class="connector">↓ 2.5 กม.</div>
+            <div class="item">
+                <div class="location-card"><span class="name">11. ครัวโกเท้</span></div>
+            </div>
+            <div class="connector">↓ 4.6 กม.</div>
+            <div class="item">
+                <div class="location-card"><span class="name">12. วัดพระประโทณเจดีย์</span></div>
+            </div>
+            <div class="connector">↓ 11 กม.</div>
+            <div class="item">
+                <div class="location-card"><span class="name">13. วัดดอนยายหอม</span></div>
+            </div>
+            <div class="connector">↓ 4.4 กม.</div>
+            <div class="item">
+                <div class="location-card"><span class="name">14. วัดดอนขนาก</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakhon Pathom Trip Plan</title>
+    <style>
+        :root {
+            --blue-route: #3498db;
+            --orange-route: #e67e22;
+        }
+        body { font-family: 'Sarabun', sans-serif; background: #f4f4f4; padding: 20px; }
+        .trip-container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; color: #333; }
+        .route-section { margin-bottom: 30px; }
+        .day-title { padding: 10px; border-radius: 8px; color: white; margin-bottom: 15px; }
+        .day1 { background-color: var(--blue-route); }
+        .day2 { background-color: var(--orange-route); }
+        .location-item { border-left: 3px solid #ccc; padding: 10px 20px; position: relative; margin-left: 10px; }
+        .location-item::before { content: ''; width: 12px; height: 12px; background: #333; border-radius: 50%; position: absolute; left: -8px; top: 15px; }
+        .distance { font-size: 0.85em; color: #666; font-style: italic; margin: 5px 0; }
+        .highlight { font-weight: bold; color: #2c3e50; }
+    </style>
+</head>
+<body>
+
+<div class="trip-container">
+    <h2>Nakhon Pathom 2D1N</h2>
+
+    <div class="route-section">
+        <div class="day-title day1">🔵 DAY 1: เมืองนครปฐม (จากสุพรรณฯ)</div>
+        <div class="location-item"><span class="highlight">1. วัดป่าปฐมชัย</span></div>
+        <div class="distance">↓ 8.5 กม.</div>
+        <div class="location-item"><span class="highlight">2. เชลล์ไม่เคยชิม (ลำพยา)</span></div>
+        <div class="distance">↓ 1.5 กม.</div>
+        <div class="location-item"><span class="highlight">3. พระราชวังสนามจันทร์</span></div>
+        <div class="distance">↓ 2.2 กม.</div>
+        <div class="location-item"><span class="highlight">4. วัดห้วยจระเข้</span></div>
+        <div class="distance">↓ 1.8 กม.</div>
+        <div class="location-item"><span class="highlight">5. ร้านตั้งฮะเส็ง</span></div>
+        <div class="distance">↓ (ติดกัน)</div>
+        <div class="location-item"><span class="highlight">6. วัดพระปฐมเจดีย์ฯ</span></div>
+        <div class="distance">↓ 1.5 กม.</div>
+        <div class="location-item"><span class="highlight">7. วัดไผ่ล้อม</span></div>
+        <div class="distance">↓ 2.5 กม.</div>
+        <div class="location-item"><span class="highlight">8. ถนนคนเดินวัดพระงาม</span></div>
+        <div class="distance">↓ 1.2 กม.</div>
+        <div class="location-item"><span class="highlight">9. ตลาดโต้รุ่ง (ช.หอยทอด)</span></div>
+    </div>
+
+    <div class="route-section">
+        <div class="day-title day2">🟠 DAY 2: สายมู & ทางกลับ</div>
+        <div class="location-item"><span class="highlight">10. กุ้งอบภูเขาไฟ</span></div>
+        <div class="distance">↓ 2.5 กม.</div>
+        <div class="location-item"><span class="highlight">11. ครัวโกเท้</span></div>
+        <div class="distance">↓ 4.6 กม.</div>
+        <div class="location-item"><span class="highlight">12. วัดพระประโทณเจดีย์</span></div>
+        <div class="distance">↓ 11 กม.</div>
+        <div class="location-item"><span class="highlight">13. วัดดอนยายหอม</span></div>
+        <div class="distance">↓ 4.4 กม.</div>
+        <div class="location-item"><span class="highlight">14. วัดดอนขนาก</span></div>
+    </div>
+</div>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Nakhon Pathom Route Map</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+        
+        body { font-family: 'Sarabun', sans-serif; background: #f8f9fa; display: flex; justify-content: center; padding: 20px; }
+        .map-container { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 400px; }
+        
+        .title { text-align: center; font-weight: bold; margin-bottom: 25px; color: #333; }
+        
+        .route-path { position: relative; padding-left: 40px; }
+        
+        /* เส้นทางหลัก */
+        .route-path::before {
+            content: ''; position: absolute; left: 15px; top: 10px; bottom: 10px; width: 4px; background: #ddd; border-radius: 2px;
+        }
+
+        .point { position: relative; margin-bottom: 40px; }
+        .point:last-child { margin-bottom: 0; }
+
+        /* จุดวงกลม */
+        .dot {
+            position: absolute; left: -34px; top: 0; width: 18px; height: 18px; 
+            border-radius: 50%; background: white; border: 4px solid; z-index: 2;
+        }
+
+        .day1 .dot { border-color: #3498db; }
+        .day2 .dot { border-color: #e67e22; }
+
+        .info { background: #fff; padding: 8px 12px; border-radius: 8px; border: 1px solid #eee; }
+        .loc-name { font-weight: bold; font-size: 14px; color: #2c3e50; }
+        
+        /* ตัวเลขระยะทางระหว่างจุด */
+        .dist-tag {
+            position: absolute; left: -50px; top: -30px; background: #666; color: white;
+            font-size: 11px; padding: 2px 6px; border-radius: 10px; font-weight: bold;
+        }
+
+        .day-label {
+            margin: 20px 0 10px -10px; font-weight: bold; padding: 5px 15px;
+            border-radius: 5px; color: white; display: inline-block;
+        }
+        .label1 { background: #3498db; }
+        .label2 { background: #e67e22; }
+    </style>
+</head>
+<body>
+
+<div class="map-container">
+    <div class="title">📍 แผนผังเส้นทางสุพรรณฯ - นครปฐม</div>
+
+    <div class="day-label label1">DAY 1: เข้าเมืองจากมาลัยแมน</div>
+    <div class="route-path day1">
+        <div class="point"><div class="dot"></div><div class="info"><span class="loc-name">1. วัดป่าปฐมชัย</span></div></div>
+        
+        <div class="point">
+            <div class="dist-tag">8.5 กม.</div>
+            <div class="dot"></div>
+            <div class="info"><span class="loc-name">2. เชลล์ไม่เคยชิม (ลำพยา)</span></div>
+        </div>
+
+        <div class="point">
+            <div class="dist-tag">1.5 กม.</div>
+            <div class="dot"></div>
+            <div class="info"><span class="loc-name">3. พระราชวังสนามจันทร์</span></div>
+        </div>
+
+        <div class="point">
+            <div class="dist-tag">2.2 กม.</div>
+            <div class="dot"></div>
+            <div class="info"><span class="loc-name">4. วัดห้วยจระเข้</span></div>
+        </div>
+
+        <div class="point">
+            <div class="dist-tag">1.8 กม.</div>
+            <div class="dot"></div>
+            <div class="info"><span class="loc-name">5. ร้านตั้งฮะเส็ง</span></div>
+        </div>
+
+        <div class="point">
+            <div class="dist-tag">ติดกัน</div>
+            <div class="dot"></div>
+            <div class="info"><span class="loc-name">6. วัดพระปฐมเจดีย์ฯ</span></div>
+        </div>
+
+        <div class="point">
+            <div class="dist-tag">1.5 กม.</div>
+            <div class="dot"></div>
+            <div class="info"><span class="loc-name">7. วัดไผ่ล้อม</span></div>
+        </div>
+
+        <div class="point">
+            <div class="dist-tag">2.5 กม.</div>
+            <div class="dot"></div>
+            <div class="info"><span class="loc-name">8. ถนนคนเดินวัดพระงาม</span></div>
+        </div>
+
+        <div class="point">
+            <div class="dist-tag">1.2 กม.</div>
+            <div class="dot"></div>
+            <div class="info"><span class="loc-name">9. ตลาดโต้รุ่ง (ช.หอยทอด)</span></div>
+        </div>
+    </div>
+
+    <div class="day-label label2">DAY 2: สายมูทางกลับสุพรรณฯ</div>
+    <div class="route-path day2">
+        <div class="point"><div class="dot"></div><div class="info"><span class="loc-name">10. กุ้งอบภูเขาไฟ</span></div></div>
+        
+        <div class="point">
+            <div class="dist-tag">2.5 กม.</div>
+            <div class="dot"></div>
+            <div class="info"><span class="loc-name">11. ครัวโกเท้</span></div>
+        </div>
+
+        <div class="point">
+            <div class="dist-tag">4.6 กม.</div>
+            <div class="dot"></div>
+            <div class="info"><span class="loc-name">12. วัดพระประโทณเจดีย์</span></div>
+        </div>
+
+        <div class="point">
+            <div class="dist-tag">11 กม.</div>
+            <div class="dot"></div>
+            <div class="info"><span class="loc-name">13. วัดดอนยายหอม</span></div>
+        </div>
+
+        <div class="point">
+            <div class="dist-tag">4.4 กม.</div>
+            <div class="dot"></div>
+            <div class="info"><span class="loc-name">14. วัดดอนขนาก</span></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

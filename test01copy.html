@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* html */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 200px;
+        }
+
+        /*body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+
+            /* background-attachment: fixed; หาค่าตรงกลาง */
+            background-color: blue;
+        }
+
+
+
+        /* comtainer */
+        .container {
+            width: 1200px;
+            margin: 120px auto 40px;
+            flex-direction: column;
+
+            display: flex;
+            justify-content: center;
+
+        }
+
+        /* card */
+        .card {
+            background-color: #ffffff;
+            padding: 15px 150px;
+            border-radius: 12px;
+            text-align: center;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .card1 {
+            background-color: orange;
+            padding: 15px 50px;
+            border-radius: 15px;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .card2 {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card3 {
+            background-color: aquamarine;
+            padding: 12px 24px;
+            border-radius: 7px;
+            text-decoration: none;
+            grid-template-columns: repeat(3, 1fr);
+            transition: 0.3s;
+
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .card4 {
+            padding: 25px 25px;
+            background-color: red;
+            text-align: center;
+            color: #eef1ff;
+            margin: 15px;
+            text-decoration: none;
+            font-size: 26px;
+            transition: 0.3s;
+        }
+
+
+
+        header {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            box-shadow: 2px 5px 10px rgb(69, 69, 69);
+
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .list-mamu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin-top: 5px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .list-mamu li {
+            margin-top: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .list-mamu li:hover {
+
+            transform: translateY(-5px);
+
+        }
+
+        .list-mamu a {
+
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+            background: linear-gradient(145deg, rgb(248, 156, 156), rgb(255, 190, 223));
+            padding: 8px 16px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px black;
+            text-align: center;
+        }
+
+        .list-mamu li a:hover {
+            background: linear-gradient(145deg, rgb(21, 0, 255), rgb(0, 213, 255));
+            padding: 8px 16px;
+
+        }
+
+        .position {
+            display: flex;
+            align-items: center;
+
+            /* dashd คือเส้นป่ะ */
+            margin: 10px 0;
+        }
+
+        .position.right {
+            justify-content: flex-end;
+        }
+
+        img {
+            max-width: 20%;
+            height: auto;
+            margin: 10px;
+
+            border-radius: 50%;
+
+        }
+
+        /* ปรับขนาดรูปสอง */
+        .img-stlyes {
+            max-width: 220px;
+            height: auto;
+            margin: 20px;
+            transition: 0.3s;
+
+            border-radius: 50%;
+            display: flex;
+            align-items: end;
+        }
+
+        .img-stlyes a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px;
+        }
+
+        .text1 {
+            display: flex;
+            padding: 2px;
+            gap: 5px;
+        }
+
+        code {
+            background-color: #ffffff;
+            border-radius: 4px;
+            padding: 2px 4px;
+        }
+
+
+        .table {
+            width: 1000%;
+            max-width: 600px;
+            border-collapse: collapse;
+            font-family: 'Sarabun', sans-serif;
+            margin: 20px 0;
+        }
+
+        .grade {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .box {
+            background: #eef1ff;
+            border-radius: 14px;
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        footer {
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            padding: 20px;
+            bottom: 0;
+        }
+
+        .card3:hover {
+            background-color: #ff0000;
+            color: white;
+        }
+
+        .card4:hover {
+            background-color: rgb(0, 255, 0);
+            color: #eef1ff;
+            transform: scale(1.1);
+
+        }
+
+        h2 {
+            font-size: 32px;
+        }
+
+        .img-stlyes:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="mudue-1">
+        <h1>📊รายงานผลเกรด</h1>
+    </header>
+
+    <!-- 2 -->
+    <div class="container">
+        <div class="card justify-center">
+            <ul class="list-mamu">
+                <li><a href="#c1">👨‍🎓ข้อมูลนักศึกษา</a></li>
+                <li><a href="#c2">📊ผลการเรียน</a></li>
+                <li><a href="#c3">📞ติดต่อ</a></li>
+            </ul>
+        </div>
+        <div class="card" id="c1">
+            <div class="card1">
+                <div>
+                    <div>
+                        <h2>Mr.Phuthanet Samhiang</h2>
+                    </div>
+                    <div class="table" id="c2">
+                        <table>
+                            <tr>
+                                <th>รหัสนักศึกษา: </th>
+                                <td><u>674230035</u></td>
+                            </tr>
+                            <tr>
+                                <th>ชื่อ - นามสกุล: </th>
+                                <td>ภูธเนศ ชำเฮียง</td>
+                            </tr>
+                            <tr>
+                                <th>หมู่เรียน: </th>
+                                <td>67/44</td>
+                            </tr>
+                            <tr>
+                                <th>หมู่เรียน: </th>
+                                <td>67/44</td>
+                            </tr>
+                            <tr>
+                                <th>อาจารย์ที่ปรึกษา: </th>
+                                <td>อ.สุขสวัสดิ์ แซ่ลิ่ม</td>
+                            </tr>
+                            <tr>
+                                <th>GitHub:</th>
+                                <td><code>https://github.com/phuthanet035/web-html-6744</code></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div>
+                <img src="data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCADIAKADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwC+BTsc0oFLivrLnzNtBKTFOxRigYmKTFPxxSUCsJijFLS4oHYbQelJJIkQy7qo9zWS/iTSROYRexlwcHrj8+lRKcY/E7FqEpfCjVFLWUPEelLL5Ut2iN79Pzq5DqNldNiC6ikPorCkqkG7JidOaV2izikxThRirsQJS4pQOafiqQmNxxSYqTHFJTJI8UhWpcU0jigBRSkUClqDToGOKTFL2oFMQlFOpKBB3rn/ABF4mg0aLy0w9yw4UdvrU/iLWl0iy+Qb7mTiJPX3+leV3Qmu7pnnkLu3LtXn43Gey9yG/wCR6GEwvtPfnsPvtYvdTmZ5p2YZ6Z4H0FVTIEjOTzSYCcAVDIjMM/w55rw3Jyd5M9dJJWQ+V90UcwfJHylat285XaysVI/iWqDRHygB61ZttyMAelSNHZ6R4ruLULHdH7TD03fxr/jXb2l1BfQLPbyB0Pf0ryIrhgy/KfbvW3oOuPpd9Grtm3lIVwT0PrXo4PHSg1Co7r8jhxWDjNOUFZnpWMGnUgIIBHQ0te8eIxM0ClpaBCU0g0+g9KAEHSigUtSXfQTFGKXtRTEIaKU01jtUn0FAdTy/xRfNLrNyxbJU+Wg/ugViRNuVgTye9R3k5mu5pWPLyMT+dJGAVZ5H2r2A718rVm5zcn1PpqceWKSGyAByqfTPpT/KPlBVGamitZbkYht5HA7qpNdN4b8JXl3cRyXELLChztI6n3rCc1FXZrCm5PQi0rwwbjSfNmUhmO76DtWDqOnm2lIGSo7jtXu9vYRW1v5ZAORg8Vyuu+FI55xNZgoxzuXPBrkp125anTOiuXQ8ugZmjaKQ5x91qglfcOe1aOpWE+mXzRyLtwe9ZrAeY6e9dsXfVHLJW0Z7PpcwuNKtJVOQ0Sn9Ku1jeFX8zwzYt/0zx+RIrZzX1tN80E/I+Xqq02vMQ0UpoqzMWkNFIaAAUtJRSHcWkoopiuFIwyjD1FLRSGtzxHWbVrTUZoBn925/nXT6T4GubmeKa7dRbEBtoPJHpWvruhQ3+rRX0aFoTlJSOhI7110loZLMQo/lggAkelfGYupFTtTlp3Pr8NB8t6i1NDRtMt47RYbZIlRRjaoFaQthEMYA+lco+k3trGr6frDQA9UyOtaOlXF8p8m8m85v71cc1G2jOmDlfVGwUyOlN8o4BI+Wql7dSQwnZw3QVgFvE1xJiG9ijhJ+6y5qKaV9XYqbaWiIdf8ADVvq9+J2fAAwce1eZ61pcmnaw9qQGZ8Mu0dc8AV6wmnXllcLvmEm4fvADxn1rKn0mC68Ux3M6g+RGCue7EnFd2GTlVUG9DlxDtTcramjo9obDR7S1P3o4wG+vertB4NANfaRSUVy7HyE23J33DvSUZopkBSE8UU0mgY6loooAKKKKBCUtFFKS5otFQlyyTIYJUGmw2IjZpgn7wgcL3OavPaG7h2K7LkdVPNVbeCZUuJYdvzuC4b0A7VsaaQStfnsoOL5Xuj7xyUveXU5a78HILu0uR9qJhbcyFsrJznmtSxtntrkDaVy2VX+6PSurljzyelUJ1XzwEHzVU3JqzJikncz9XJZYwwO0k5x2rmdR0q+ufIFtfzWsqybpJBnay9gB2xXZ3cQPlsw475q0kEbAFAKmLad0OSTVmctZafexOzvdtPAT8pccj8asN9mEk0UzhJJI/lOOvYV0t5GEs8dCelcxfwPcRDKYWOVWDDkn1Ht2pu+oRtcqaduGnW4bO4IAc1apAAowOgor77DwdOjGD6JHw+JqKpWnNdWwopKWtTEQ0w080wigZKKKUUhpAFFFFABS4oooAUO4RkDEK33gO9XrBtgBzVCrNs+FI7g18/nlGEaaqRWt9T3cnrTlN05PS2htuzzR4Ru1Y076hBcokEcW3dkys3b2FTSXjQwPIoZto4VRkmsxNce5T9zZzehLKc/lXzsfePoEneyLM1/qcs0Stbo0ZYhgX5+vStKzElv8rtkHkVhrqVxEMmzYnPdTVux1ZL1XZEdAhwQ4xz7USjbUbTWjNW/udygA9BWOZ5PLMW7Kk+lWJZMqzVSr3Mkw8KrlOava1jw83rzpqMIO173G0UtFfUHzY2lopKBi0w9KkppFIY8UUCikMSloooEFFFFAC0bvLYNng8Gigrv4rjzClGphpp9r/cdmBqOniItdXb7y1buN/qDTrm3kT99bp859B1qmu+2k55X+VXf7YjSLaa+GjofYtlSL7VK22cEAHpU0uFUKoAA9Kli1aERsMKSe9VJJHnf5BVPUTlcJH3YQdutMpdjJ97vzn1or7TLKEaWGjbrr958jmNaVXESv00G0UtJXonAJRS0lAgpDS0HpSGOopB0opFBmnU2loEgNAopQM9KBrcBVmeKaDSra5SMlJrvyncfwgKSPwJ/kKS3srm5YLDBI5PovH513+laWi6CljdRAhlPmL7k5rzcymnRcE9Wejl8Gqqm1ojhmjEkYyOagfSLa6XDgh/UHFb2oaRJp0+w5aNvuP6j/GqLxHHHBr41xcHZn1SkpK6MgaPbWx+Tcze7Zq3HD5cfAxVpYPU0s42lI4kZ5HO1EUZLH2o1YaIyrK9F1q02iyAl9vmQMBypxyPocGkruvDnhSHSppdRulWTUp0CMw5Eaf3R/U1zl/oGoQXD7LZpIyx2mP5uM+lfVZTVcKfs6j9D5vNKSlPngvUx6SpZoJrd9k0Txt6OuDUfWvbTTV0eO009QpKXFJTJEoopM0hi0U0Vo6TpU2rXXlR/LGvMj4+6P8aiU1Bc0tjSMXJ8sdylGjyyBI1Z2PRQMk10WneE7ifD3beSn90csf8ACuo03RrTTExBGNx6u3JNaPOK8mvmMnpT0PTo4CK1qamRB4f06AgpaKWAxufn+dWYbOG1yIoYlDHLBQBmr1IVB7V58qk5bs74wjHZEYVMcAe2KnQYAqEx45FTR/6se1QUNurWK9tmhlHB6EdQfUVw93BLZ3bWs6gOOVbs49RXdT3ENpbSXFxIscMSl3djgKB1NeG+K/itLql+YdOs4PsMTfJJMp3v78EbR7VjVoe1Wm5tSq8m+x18kohA3Dc5OFRepNdboGjGyT7ZdgG8lHTtEv8AdHv615R4O+IFjDrcR1i0CK/yrcbyREfXB7e+eK9yVlkRXRgysMgg5BFRSw7pu8i6tbmVoiGoQoBIGRyan460zHeuk5iGW0gnAE0McgHTeoNZ114Z0y5Uj7MIm7NEcf8A1q2ccUlXGpOHwuxMqcZfErnA6j4RvLYF7VhcRjsOGH4d6511ZGKspVgcEEdK9g+vNYPiDw/HqUDTQqFulGQR/H7GvSw+YO/LV+886vgFbmp/ced9qaacwKsVYEEHBB7U2vXPKsIuSQBzmvTfD2mLp2mCJh++b5pPr6fhXBaDaNfaxbxAZVWDv9BzXpsLYk5PXivIzKq9KaPWy+ktZskHJpcU3o+PepDXlHpDcUUtJQA2nKQiMWIAHJJpQKZIgkjZD91hg0DPJfi1rV7qWkiz00v9ijffcFR/rAP/AGUHmvG4WzivqKLQ7dILiOaNZFmBVgR/CeMV8065o/8AY+v32necXW3mKBhxkdqumxMhkIC17b8HfEN7daZJpGobisHzWjt12d1P07e30ryvwPp1ve+MdOtrn95E7n5H5BIUkZ/EV9CwaPDaSrdQoqzKwLFRjIpzBHQN0+tBpOp9qdWYw7UmKXtRQAlNJ+cCn1Ap3XGOwFAHB+MNM+x6iLpBiK4yT7N3rmzXpHi63W80SUry9uRIPp3/AErzUmvoMDVdSir7rQ8LG0uSrp1O68Gad9nsGvZFxJP932Uf4mugRuAfQmpI0WONY0UKqrgAdAKqwNu3j0c14dao6k3N9T2aVNU4KKLrMBhvWpM96rZ3IVqdDlazLH0U3oadQMKQ06koAo3txHZ2s1zKcRwxtIx9gMmvlTUb6TUtWu72U5eeRpD+Jr6B+KOonT/BN7tOHuCsC/8AAjz+gNfOadSa0gJm/wCDpjD4w0iQHpdxj8yB/WvqFAK+UtAl8rxFpsnZbqI/+PCvq1O1KYImHSlpBS1AwpO9BpKAF7VBGeWb1qc/dNVVP3qAEaJbi3mhbpIpU/iK8glUxyvG33lJB/CvYLY7gx/2jXmHie1+x6/dJj5XbzF+h5/nmvUyyfvSiedmMLxUj1EdfwrNtW/ezL6PWl3/AArJtTi+uV968o9Evcqc1YjYEVATladCfkFMRZpRUQPNSKaBklNPSlpr/doA8l+Nt0Rpml2oP+smeQ/8BGP/AGavPvDXgfUPElnLdwzRQQI2xWlBO9h1xjt711XxpuN+tabb9o7dn/Nsf+y1vfCrU7GXwv8AYzPHHcW7N5iswBIJJB+nP6UTk4QuhLV6nj8tnc6PrgtbpNk9vMAwz6HqPavq23bdGp9RXzN441G2v/F91PZsrQrtjDr0YqACR+NfSWmSeZZ27/3olb8xTu3FNgaApaSikMDTc80McCmJljmgB8pxCx9qqM22Mn2qzOf3RHrWfdPtgPvxQBPYHMOfeuR8fWfNreqPWJj+o/rXWad/qKp+JrP7boF0gGWRfMX6jn+Wa3wtT2dWMjDEw56bRp7sisiHjVrgewNFFc5uiS9mdIwEJBJ5xU1jIXgyexoooDoW91OVuaKKYEynIpsn3aKKAPAPjDJu8YxLn7ton/oTV57uI6HFFFbR2JGV9U+Hp/M0XT2z1toz/wCOiiiomNG6DxQTRRUDI2OTipFIAoooEQzNnisy/flVoooew1uXNP8A+Pf8asuAylTyCMEUUUAz/9k="
+                    alt="photo" class="img-stlyes">
+            </div>
+            <!-- 3 -->
+
+        </div>
+
+        <div class="" id="c3">
+            <section>
+                <div class="grade">
+                    <a href="" class="card3">📚ปี 1 เทอม 1:3.25</a>
+                    <a href="" class="card3">📚ปี 1 เทอม 2:3.16</a>
+                    <a href="" class="card3">📚ปี 2 เทอม 1:3.16</a>
+                </div>
+            </section>
+        </div>
+        <a href="" class="card4">📝เกรดเฉลี่ยสะสม: 3.19</a>
+
+        <div>
+
+        </div>
+        </div>
+        <footer>
+            <p>©️Webmaster by Phutha net Samhiang.ID674230035</p>
+            <p>Nakhon Pathom Rajabhat University</p>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
