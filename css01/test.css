@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: blue;
+    font-family: "K2D", sans-serif;
+}
+
+.Head-top { 
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: red;
+
+}
+
+.card-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+    margin-top: 20px;
+    margin-left: 15%;
+
+}
+
+
+/* Header =========================================================== Header */
+.header-site {
+    background-color: rgb(255, 0, 0);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+
+}
+
+/* Font ============================================================== Font */
+.font-site {
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+.font-style {
+    font-size: 1rem;
+    font-weight: 700;
+
+    margin-top: 10px;
+    display: flex;
+    justify-content: start;
+}
+
+.font-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+
+}
+
+.site-subtitle {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+
+
+}
+
+/* distance ======================================================== distance */
+.distance {
+    background-color: antiquewhite;
+    margin-bottom: 25px;
+}
+
+/* Nav-style ======================================================= Nav-style */
+.menu-nav {
+    background-color: blue;
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    background-color: rgb(255, 137, 137);
+
+
+    flex-wrap: wrap;
+
+}
+
+.nav-menu li a {
+    color: rgb(12, 12, 12);
+    font-size: 0.9rem;
+
+    text-decoration: none;
+
+    display: block;
+    padding: 10px 15px;
+
+
+
+}
+
+.nav-menu li a:hover {
+    background-color: rgb(255, 111, 0);
+    text-decoration: underline;
+
+
+}
+
+.btn-login {
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.btn-login:hover {
+    background-color: blue;
+    color: aliceblue;
+}
+
+/* card =================================================== card */
+.card {
+    background-color: aliceblue;
+    border-radius: 15px;
+
+    width: 400px;
+    height: 500px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+
+    transition: all 0.3 ease;
+
+}
+
+/* img ======================================================= img */
+.img-stlyes {
+    width: 200px;
+    height: 160px;
+
+    max-width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+
+/* btn-read-more */
+.read-more {
+    text-decoration: none;
+    background-color: rgb(254, 213, 213);
+    color: blue;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+}
+
+.read-more:hover {
+    background-color: rgb(30, 0, 255);
+    color: rgb(0, 0, 0);
+}
+
+/* footer ========================================== footer */
+footer {
+    margin-top: 20px;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 40px 40px;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    margin-top: 15px;
+}
