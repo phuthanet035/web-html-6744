@@ -9,15 +9,21 @@ body {
     font-family: "K2D", sans-serif;
 }
 
+.container {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 .Head-top { 
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 10px auto;
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     background-color: red;
 
@@ -28,7 +34,7 @@ body {
     gap: 20px;
     grid-template-columns: repeat(2, minmax(350px, 1fr));
     margin-top: 20px;
-    margin-left: 15%;
+    
 
 }
 
@@ -40,7 +46,7 @@ body {
 
 .header-inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     padding: 20px 0;
@@ -138,7 +144,7 @@ body {
     background-color: aliceblue;
     border-radius: 15px;
 
-    width: 400px;
+    width: 100%;
     height: 500px;
     padding: 25px;
     backdrop-filter: blur(10px);
