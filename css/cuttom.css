@@ -1,32 +1,30 @@
 /* Global CSS Styles */
 * {
-
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "K2D", sans-serif;
-    background-color: rgb(150, 148, 148);
+  font-family: "K2D", sans-serif;
+  background-color: rgb(150, 148, 148);
 }
 
 .wrapper {
-    width: 1000px;
-    max-width: 100%;
-    margin: 0 auto;
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
 
-
-    /* background-color: rgb(91, 250, 255); */
+  /* background-color: rgb(91, 250, 255); */
 }
 
 a {
-    text-decoration: none;
-    color: blue;
+  text-decoration: none;
+  color: blue;
 }
 
 a :hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* ============================================================= */
@@ -34,56 +32,52 @@ a :hover {
 /* ============================================================= */
 
 .site-header {
-    background-color: white;
+  background-color: white;
 }
 
 .header-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .site-title {
-    /* rem เปลี่ยนตัววหลักตัวอื่นเปลี่ยนหมด*/
-    font-size: 1.5rem;
-    font-weight: 700;
-
+  /* rem เปลี่ยนตัววหลักตัวอื่นเปลี่ยนหมด*/
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .site-subtitle {
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: rgb(102, 102, 102);
-
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgb(102, 102, 102);
 }
 
 .social-icons a {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #555;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
 
-    border: 1px solid #555;
-    border-radius: 50%;
+  border: 1px solid #555;
+  border-radius: 50%;
 
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
 
-    transition: all 0.3s ease;
-
-
+  transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
-    background-color: blue;
-    transform: translateY(-5px);
-    color: aliceblue;
+  background-color: blue;
+  transform: translateY(-5px);
+  color: aliceblue;
 }
 
 /* ============================================================= */
@@ -91,60 +85,57 @@ a :hover {
 /* ============================================================= */
 
 .main-nav {
-    background-color: rgb(59, 85, 255);
+  background-color: rgb(59, 85, 255);
 }
 
 .nav-menu {
-    display: flex;
-    list-style-type: none;
+  display: flex;
+  list-style-type: none;
 
-    flex-wrap: wrap;
-    
-
+  flex-wrap: wrap;
 }
 
 .nav-menu li a {
-    color: white;
-    font-size: 0.9rem;
+  color: white;
+  font-size: 0.9rem;
 
-    display: block;
-    padding: 10px 15px;
-
+  display: block;
+  padding: 10px 15px;
 }
-
-
 
 .nav-menu li a:hover,
 .nav-menu li a.active {
-    background-color: blue;
+  background-color: blue;
 }
 
 /* ==================================================== */
 /* Hero style */
 /* ==================================================== */
 .hero-content {
-    background-color: #00ff51;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgb(189, 255, 187);
+  background-color: #00ff51;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgb(189, 255, 187);
+
+  margin-bottom: 20px;
 }
 
 .hero-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: white;
-    text-shadow: 0 2px 4px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 4px;
 
-    text-align: center;
-    /* margin-top: 20px; */
-    margin-bottom: 20px;
+  text-align: center;
+  /* margin-top: 20px; */
+  margin-bottom: 20px;
 }
 
 .hero-grid {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(2, minmax(350px, 1fr));
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, minmax(350px, 1fr));
 
-    /*
+  /*
         grid-template-columns: 1fr 1fr;
         grid-template-columns: repeat(2, 1fr);
         grid-template-columns: repeat(2, minmax(250px, 1fr));
@@ -155,66 +146,221 @@ a :hover {
 /* ====================================================== */
 /* hero-item */
 /* ======= */
- 
- 
- 
 
 .hero-item {
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 25px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
-    backdrop-filter: blur(10px);
-    /* เพิ่มความเบลอพื้นหลังด้านหลังไอเท็ม */
+  backdrop-filter: blur(10px);
+  /* เพิ่มความเบลอพื้นหลังด้านหลังไอเท็ม */
 
+  transition: all 0.3s ease;
 
-    transition: all 0.3s ease;
-
-    /*overflow: hidden; /* ซ่อนส่วนที่เกินขอบเขตของกล่อง */
+  /*overflow: hidden; /* ซ่อนส่วนที่เกินขอบเขตของกล่อง */
 }
 
 .hero-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    background: white;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  background: white;
 }
 
 .hero-item h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #333;
-    line-height: 1.3;
-    margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.3;
+  margin-bottom: 10px;
 }
 
 .hero-item p {
-    font-size: 0.9rem;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
 .hero-item .read-more {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #1e8bc3;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1e8bc3;
 
-    display: inline-block;
+  display: inline-block;
 }
 
 .hero-item .read-more:hover {
-    color: #764ba2;
-    text-decoration: none;
+  color: #764ba2;
+  text-decoration: none;
 }
 
 .hero-item .read-more::after {
-    content: '→';
-    margin-left: 5px;
+  content: "→";
+  margin-left: 5px;
 
-    transition: margin-left 0.3s ease;
+  transition: margin-left 0.3s ease;
 }
 
 .hero-item .read-more:hover::after {
-    margin-left: 10px;
+  margin-left: 10px;
+}
+
+/* =========================================== */
+/* Page */
+/* =========================================== */
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 0.9fr;
+  gap: 20px;
+}
+.post-headline {
+  font-size: 0.685rem;
+  color: #777;
+
+  text-transform: uppercase;
+}
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.date-circle {
+  background-color: rgb(0, 238, 255);
+  color: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  font-size: 0.69rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.date-circle span.day {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+.m {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* card =============================== card */
+.card {
+  background-color: white;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+/* card+card เพื่อให้การ์ดบวกการ์ด */
+.card + .card {
+  margin-top: 20px;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* post-image ====================================*/
+.post-image {
+  height: 170px;
+  margin: 10px 0;
+
+  overflow: hidden;
+}
+
+.post-image img {
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* post-footer-description ============================= */
+.post-description {
+  color: rgb(39, 39, 39);
+  font-size: 0.82rem;
+
+  line-height: 1.5;
+  margin: 10px 0;
+}
+.post-footer {
+  font-size: 0.68rem;
+
+  border-top: 1px solid #a1a1a1;
+  padding-top: 10px;
+
+  display: flex;
+  gap: 10px;
+}
+/* css for card 2 = table=============================== */
+.comparison-tb {
+  box-shadow: 0 2px 8px rgb(114, 114, 114); /* border: 1px solid red; */
+  /* border-collapse: collapse; */
+}
+/* .comparison-tb th,
+.comparison-tb td {
+  border: 1px solid red;
+}
+
+.comparison-tb thead {
+  background-color: rgb(150, 148, 148);
+  color: white;
+} */
+
+.comparison-tb th {
+  background: linear-gradient(45deg, rgb(71, 166, 245) 0%, rgb(61, 74, 255))
+    100%;
+  color: white;
+  padding: 15px;
+}
+
+.comparison-tb tr:nth-child(even) td {
+  background-color: #9dd2fd;
+}
+
+.comparison-tb tr:hover td {
+  background-color: #8baef8;
+}
+
+.comparison-tb td {
+  background-color: #bcbcff;
+  padding: 15px;
+}
+.featuer {
+  font-weight: 600;
+  color: black;
+  font-size: 0.8rem;
+}
+.text-gray {
+  font-weight: 500;
+  color: rgb(78, 78, 78);
+  font-size: 0.8rem;
+}
+.text-red {
+  font-weight: 500;
+  color: red;
+  font-size: 0.8rem;
+}
+.text-green {
+  font-weight: 500;
+  color: green;
+  font-size: 0.8rem;
+}
+/* Right Side =========================================*/
+.widget {
+  background-color: white;
+  border-radius: 4px;
+  padding: 20px;
+}
+/* คล้ายๆกับ card+card */
+.widget + .widget {
+  margin-top: 20px;
 }
