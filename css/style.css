@@ -498,16 +498,6 @@ a :hover {
   margin-top: 20px;
 }
 
-.contact-form-main-card-second-right {
-  background: linear-gradient(8deg, rgb(237, 119, 245) 0%, rgb(186, 28, 243) 100%);
-
-  padding: 20px;
-  border-radius: 20px;
-
-  margin-top: 20px;
-}
-
-
 .contact-form-main-card-right .form-input,
 .contact-form-main-card-right .form-select {
   width: 100%;
@@ -521,25 +511,6 @@ a :hover {
 
 .contact-form-main-card-right .form-input,
 .contact-form-main-card-right .form-select {
-  background-color: #fef9f9;
-  color: #878787;
-  border: 2px solid #ccc;
-
-}
-
-.contact-form-main-card-second-right .form-input,
-.contact-form-main-card-second-right .form-select {
-  width: 100%;
-  padding: 12px 15px;
-  border-radius: 4px;
-  
-  font-size: 0.9rem;
-
-}
-
-
-.contact-form-main-card-second-right .form-input,
-.contact-form-main-card-second-right .form-select {
   background-color: #fef9f9;
   color: #878787;
   border: 2px solid #ccc;
@@ -566,22 +537,6 @@ a :hover {
   color: #ffffff;
   
   margin-bottom: 5px;
-}
-
-.form-textarea-right  {
-  min-height: 100px;
-  resize: vertical;
-  padding: 10px 20px;
-  border-radius: 6px;
-  /* resize: vertical; ดึงได้แต่จะลงแต่ข้างล่าง */
-}
-
-.reset-button-right {
-  background: linear-gradient(8deg, rgb(163, 161, 247) 0%, rgb(0, 47, 255) 100%);
-}
-
-.reset-button-right:hover {
-  opacity: 0.8;
 }
 
 

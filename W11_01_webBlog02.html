@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=K2D:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/cuttom.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -178,9 +178,9 @@
                                     <td class="text-green">✅ เรียงต่อกันในบรรทัดเดียว </td>
                                 </tr>
 
-                                <tr> 
+                                <tr>
                                     <td class="featuer">ความกว้างเริ่มต้น </td>
-                                    <td class="text-red">กินพื้นที่เต็มความกว้าง (100%)❌  </td>
+                                    <td class="text-red">กินพื้นที่เต็มความกว้าง (100%)❌ </td>
                                     <td class="text-green">ตามเนื้อหาภายใน (auto)✅</td>
                                 </tr>
                                 <tr>
@@ -188,24 +188,24 @@
                                     <td class="text-green">กำหนดได้ทั้ง width และ height ✅</td>
                                     <td class="text-green">กำหนดได้ทั้ง width และ height✅</td>
                                 </tr>
-                                <tr>  
+                                <tr>
                                     <td class="featuer">margin และ padding </td>
                                     <td class="text-green">ใช้ได้ครบทุกทิศทาง ✅</td>
                                     <td class="text-green">ใช้ได้ครบทุกทิศทาง✅</td>
                                 </tr>
-                                <tr>  
+                                <tr>
                                     <td class="featuer">vertical-align </td>
                                     <td class="text-red">ไม่มีผลกับ block element ❌</td>
                                     <td class="text-green"> สามารถใช้ได้ (top, middle, bottom)✅</td>
                                 </tr>
 
-                                <tr>   
+                                <tr>
                                     <td class="featuer">ช่องว่างระหว่างองค์ประกอบ </td>
                                     <td class="text-red">ไม่มีปัญหาช่องว่าง 🚫</td>
                                     <td class="text-red">มีช่องว่างจาก whitespace ใน HTML ❌</td>
                                 </tr>
 
-                                <tr>     
+                                <tr>
 
                                     <td class="featuer">การใช้งานที่เหมาะสม </td>
                                     <td class="text-green">div, section, header, footer📄</td>
@@ -213,7 +213,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        
+
                         <div class="post-description">
                             สรุป: display: block เหมาะสำหรับโครงสร้างหลักของหน้าเว็บ ส่วน display: inline-block
                             เหมาะสำหรับการสร้างเมนู หรือองค์ประกอบที่ต้องเรียงต่อกัน
@@ -233,7 +233,7 @@
 
 
                     <!-- Card3 = Form -->
-                   <div class="card">
+                    <div class="card">
                         <h2 style="text-align: center;">📞 ติดต่อเรา</h2>
 
                         <!-- ถ้าคิดเยอะต้องเขียน class ใหม่ ถ้าอย่างเพิ่มสี ฟอร์น เงา -->
@@ -332,44 +332,56 @@
                                 </div>
 
 
+                                <!-- <input type="submit" value="📨 ส่งข้อความ"> -->
+                                <!-- <input type="button" value="📨 ส่งข้อความ" onclick="alert('ส่งข้อความเรียบร้อยแล้ว')"-->
+
+
+
+                            </form>
+                        </div>
+                    </div>
+
+
                 </main>
-                <!-- right -->
+                <!-- right  -->
                 <aside>
+
                     <!-- widget01 -->
                     <div class="widget">สวัสดีครับ ยินดีต้อนรับ
                         ผมชื่อ Suksawat เขียนบล็อกเกี่ยวกับ Startup การตลาด การเขียนโปรแกรม และเทคโนโลยี AI สำหรับ SME
                         และ Startup
                         รูปผู้เขียน
                         กดติดตามใน Facebook</div>
-
                     <!-- widget02 -->
                     <div class="widget">
-                            <div class="contact-form-main-card-right">
-                                <h5 style="text-align: center;" class="for-label-font-Head">📧 รับข่าวสารใหม่</h5>
-                                <div class="form-group">
-                                    <label for="name1" class="for-label-font">ชื่อของคุณ</label>
-                                    <input type="text" id="name1" name="name1" placeholder="ป้อนชื่อ" class="form-input">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email" class="for-label-font">อีเมล</label>
-                                    <input type="text" id="email" name="email" placeholder="email" class="form-input">
-                                </div>
-                                <label for="" class="for-label-font">สนใจเนื้อหาด้านไหน</label>
-                                <select name="" id="" class="form-select">
-                                    <option value="">📖ทุกด้าน</option>
-                                    <option value="">Mobile development</option>
-                                    <option value="">UX/UI</option>
-                                    <option value="">AI</option>
-                                </select>
+                        <div class="contact-form-main-card-right">
+                            <h5 style="text-align: center;" class="for-label-font-Head">📧 รับข่าวสารใหม่</h5>
+                            <div class="form-group">
+                                <label for="name1" class="for-label-font">ชื่อของคุณ</label>
+                                <input type="text" id="name1" name="name1" placeholder="ป้อนชื่อ" class="form-input">
                             </div>
-                            <div>
-                                <button type="button" class="form-button reset-button mar-button">🚀 สมัครเลย!</button>
+                            <div class="form-group">
+                                <label for="email" class="for-label-font">อีเมล</label>
+                                <input type="text" id="email" name="email" placeholder="email" class="form-input">
                             </div>
+                            <label for="" class="for-label-font">สนใจเนื้อหาด้านไหน</label>
+                            <select name="" id="" class="form-select">
+                                <option value="">📖ทุกด้าน</option>
+                                <option value="">Mobile development</option>
+                                <option value="">UX/UI</option>
+                                <option value="">AI</option>
+                            </select>
                         </div>
+                        <div>
+                            <button type="button" class="form-button reset-button mar-button">🚀 สมัครเลย!</button>
+                        </div>
+                    </div>
 
-                    <!-- widget03 -->
-                     <div class="widget">
-                <div class="contact-form-main-card-second-right">
+            </div>
+
+            <!-- widget03 -->
+            <div class="widget">
+                <div class="contact-form-main-card-right">
                     <h5 style="text-align: center;" class="for-label-font-Head">💬 ติดต่อด่วน</h5>
                     <div class="form-group">
                         <label for="name2" class="for-label-font">ชื่อ</label>
@@ -386,30 +398,32 @@
                     </div>
                     <div class="form-group">
                         <label for="email" class="for-label-font">ข้อความสั้นๆ</label>
-                        <textarea name="delail" id="delail" class="form-textarea-right" placeholder="อธิบายสั้นๆ"></textarea>
+                        <textarea name="delail" id="delail" class="form-textarea"></textarea>
+                    </div>
+                    <div>
+                        <button type="button" class="form-button reset-button mar-button">📤 ส่งเลย</button>
                     </div>
                 </div>
-                <div>
-                    <button type="button" class="form-button reset-button-right mar-button">📤 ส่งเลย</button>
-                </div>
 
             </div>
-                    <!-- widget04 -->
-                    <div class="widget">กล่อง Facebook Like (ตัวอย่าง)
-                        203,779 คนถูกใจ</div>
 
-                    <!-- widget05 -->
-                    <div class="widget">Sponsor
-                        พื้นที่โฆษณา / วิดีโอ</div>
+            <!-- widget04 -->
+            <div class="widget">กล่อง Facebook Like (ตัวอย่าง)
+                203,779 คนถูกใจ</div>
 
-
-                </aside>
-
+            <!-- widget05 -->
+            <div class="widget">Sponsor
+                พื้นที่โฆษณา / วิดีโอ</div>
+            </aside>
 
 
-            </div>
+
+
+
 
         </div>
+
+    </div>
 
     </div>
 
