@@ -214,17 +214,20 @@ a :hover {
   grid-template-columns: 2fr 0.9fr;
   gap: 20px;
 }
+
 .post-headline {
   font-size: 0.685rem;
   color: #777;
 
   text-transform: uppercase;
 }
+
 .post-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .date-circle {
   background-color: rgb(0, 238, 255);
   color: white;
@@ -237,6 +240,7 @@ a :hover {
   flex-direction: column;
   justify-content: center;
 }
+
 .date-circle span.day {
   color: white;
   font-size: 1.2rem;
@@ -244,6 +248,7 @@ a :hover {
   display: flex;
   justify-content: center;
 }
+
 .m {
   font-size: 0.8rem;
   display: flex;
@@ -258,7 +263,7 @@ a :hover {
 }
 
 /* card+card เพื่อให้การ์ดบวกการ์ด */
-.card + .card {
+.card+.card {
   margin-top: 20px;
 }
 
@@ -267,6 +272,7 @@ a :hover {
   flex-direction: column;
   gap: 20px;
 }
+
 /* post-image ====================================*/
 .post-image {
   height: 170px;
@@ -291,6 +297,7 @@ a :hover {
   line-height: 1.5;
   margin: 10px 0;
 }
+
 .post-footer {
   font-size: 0.68rem;
 
@@ -300,11 +307,14 @@ a :hover {
   display: flex;
   gap: 10px;
 }
+
 /* css for card 2 = table=============================== */
 .comparison-tb {
-  box-shadow: 0 2px 8px rgb(114, 114, 114); /* border: 1px solid red; */
+  box-shadow: 0 2px 8px rgb(114, 114, 114);
+  /* border: 1px solid red; */
   /* border-collapse: collapse; */
 }
+
 /* .comparison-tb th,
 .comparison-tb td {
   border: 1px solid red;
@@ -316,8 +326,7 @@ a :hover {
 } */
 
 .comparison-tb th {
-  background: linear-gradient(45deg, rgb(71, 166, 245) 0%, rgb(61, 74, 255))
-    100%;
+  background: linear-gradient(45deg, rgb(71, 166, 245) 0%, rgb(61, 74, 255)) 100%;
   color: white;
   padding: 15px;
 }
@@ -334,21 +343,25 @@ a :hover {
   background-color: #bcbcff;
   padding: 15px;
 }
+
 .featuer {
   font-weight: 600;
   color: black;
   font-size: 0.8rem;
 }
+
 .text-gray {
   font-weight: 500;
   color: rgb(78, 78, 78);
   font-size: 0.8rem;
 }
+
 .text-red {
   font-weight: 500;
   color: red;
   font-size: 0.8rem;
 }
+
 .text-green {
   font-weight: 500;
   color: green;
@@ -375,7 +388,7 @@ a :hover {
   font-size: 0.8rem;
   font-weight: 600;
   color: #353535;
-  
+
   margin-bottom: 5px;
 }
 
@@ -385,7 +398,7 @@ a :hover {
   width: 100%;
   padding: 12px 15px;
   border-radius: 4px;
-  
+
   font-size: 0.9rem;
 
 }
@@ -423,7 +436,7 @@ a :hover {
   gap: 20px;
 }
 
-.form-textarea  {
+.form-textarea {
   min-height: 100px;
   resize: vertical;
   /* resize: vertical; ดึงได้แต่จะลงแต่ข้างล่าง */
@@ -436,7 +449,7 @@ a :hover {
 
 .checkbox-item {
   font-size: 0.82rem;
-  
+
   display: flex;
   align-items: center;
 
@@ -453,7 +466,7 @@ a :hover {
   padding: 12px 30px;
 
   /* background-color: #b3b3ff; */
-  
+
   color: white;
 
   font-size: 1rem;
@@ -513,7 +526,7 @@ a :hover {
   width: 100%;
   padding: 12px 15px;
   border-radius: 4px;
-  
+
   font-size: 0.9rem;
 
 }
@@ -532,7 +545,7 @@ a :hover {
   width: 100%;
   padding: 12px 15px;
   border-radius: 4px;
-  
+
   font-size: 0.9rem;
 
 }
@@ -553,7 +566,7 @@ a :hover {
   font-weight: 600;
   color: #ffffff;
 
-  
+
   margin-bottom: 5px;
 
 }
@@ -564,11 +577,11 @@ a :hover {
   font-size: 0.8rem;
   font-weight: 600;
   color: #ffffff;
-  
+
   margin-bottom: 5px;
 }
 
-.form-textarea-right  {
+.form-textarea-right {
   min-height: 100px;
   resize: vertical;
   padding: 10px 20px;
@@ -590,8 +603,157 @@ a :hover {
   border-radius: 4px;
   padding: 20px;
 }
+
 /* คล้ายๆกับ card+card */
-.widget + .widget {
+.widget+.widget {
   margin-top: 20px;
 }
 
+.widget-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #333;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.auther-photo {
+  background-color: #b6b6b6;
+
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* padding: 70px 0; */
+  /* text-align: center; */
+}
+
+.auther-follow {
+  background-color: #908f8f;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.sponsor-photo {
+  background-color: #a3a3a3;
+
+  height: 250px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.btn-facebook {
+  color: white;
+  background-color: #0241c9;
+  padding: 10px;
+  border-radius: 8px;
+
+  display: inline-block;
+  margin-top: 10px;
+
+}
+
+
+/* ตารางราคาทอง */
+/* ทุกอย่างสามารถถูก root ดึงไปใช้ได้  */
+:root {
+  --bg01: rgb(204, 205, 255);
+  --bg02: rgb(156, 176, 250);
+  --bg03: rgba(89, 92, 246, 0.17);
+  --bg04: rgba(255, 255, 255, 0.645);
+  --line: rgb(0, 0, 255);
+  --gree: rgb(0, 255, 17);
+  --red: red;
+
+}
+
+.wrap-gold-table {
+  background-color: var(--bg03);
+  border-radius: 16px;
+
+  border: 2px solid var(--line);
+  overflow: hidden;
+  /* อะไรก็ตามที่มองล้นออกมาจะทำให้มองไม่เห็น overflow: hidden; ------------------- */
+}
+
+.gold-tabel {
+  border: 1px solid var(--line);
+  border-collapse: collapse;
+  /* จะไม่เห็นเส้นคู่ จะเห็นเส้นเดียว */
+
+  width: 100%;
+  
+
+}
+
+.gold-tabel th,
+.gold-tabel td {
+  border: 1px solid var(--line);
+  padding: 20px;
+}
+
+.gold-tabel thead th {
+  background-color: var(--bg02);
+}
+
+.gold-tabel tbody th {
+  background-color: var(--bg01);
+}
+
+
+.all-year,
+.all-year th {
+  background-color: var(--bg04) !important;
+  /* ใช้กับคลาสที่สำคัญถ้ามีสองคลาสจะเลือกที่คลาสที่เราต้องการให้สำคัญ !important */
+  font-weight: 1000;
+}
+
+.num-right {
+  text-align: end;
+  
+}
+
+.green-color {
+  color: var(--gree);
+}
+
+.red-color {
+  color: var(--red);
+}
+
+.icon {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-left:  5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+
+.up {
+  border-bottom: 10px solid var(--gree);
+  
+}
+
+.down {
+  border-bottom: 10px solid var(--red);
+  
+}
+
+.num-center {
+  text-align: center;
+}
+
+footer {
+  padding: 40px 0;
+
+  background-color: #333;
+  color: rgb(255, 255, 255);
+
+  text-align: center;
+  margin-top: 30px;
+}
