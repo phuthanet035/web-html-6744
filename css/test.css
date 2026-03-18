@@ -374,7 +374,7 @@ a :hover {
 .contact-form-main-card {
   background-color: #aeabff39;
 
-  padding: 30px;
+  padding: 40px;
   border-radius: 20px;
   border: 1px solid rgba(34, 0, 255, 0.223);
   box-shadow: 0 2px 8px rgb(122, 122, 255);
@@ -686,7 +686,7 @@ a :hover {
   /* จะไม่เห็นเส้นคู่ จะเห็นเส้นเดียว */
 
   width: 100%;
-
+  
 
 }
 
@@ -714,7 +714,7 @@ a :hover {
 
 .num-right {
   text-align: end;
-
+  
 }
 
 .green-color {
@@ -729,19 +729,19 @@ a :hover {
   display: inline-block;
   width: 0px;
   height: 0px;
-  border-left: 5px solid transparent;
+  border-left:  5px solid transparent;
   border-right: 5px solid transparent;
 }
 
 
 .up {
   border-bottom: 10px solid var(--gree);
-
+  
 }
 
 .down {
   border-bottom: 10px solid var(--red);
-
+  
 }
 
 .num-center {
@@ -756,176 +756,4 @@ footer {
 
   text-align: center;
   margin-top: 30px;
-}
-
-.card-margin {
-  margin: 30px 0px;
-
-}
-
-/* หน้าจอสำหรับ แท็ปเล็ต แบบดั้งเดิม 769-992 ------------------------------------------------------------------ */
-@media (max-width: 992px) {
-  .site-header {
-    background-color: yellow;
-  }
-
-  .content-grid {
-    grid-template-columns: 1fr;
-    padding: 20px;
-  }
-
-  .form-row {
-    grid-template-columns: 1fr;
-  }
-
-
-  .form-checkbox-group {
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .card-margin {
-    margin: 10px 20px;
-
-  }
-
-  .header-inner {
-    padding: 0 15px;
-  }
-}
-
-
-
-/* หน้าจอสำหรับมือถือ 577-768 ------------------------------------------------------------------- */
-@media (max-width: 768px) {
-
-  html {
-    font-size: 14px;
-  }
-
-  .site-header {
-    background-color: rgb(38, 255, 0);
-  }
-
-  .hero-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    padding: 15px 40px;
-  }
-
-  .nav-menu li a {
-    border-top: 1px solid #cccccc96;
-  }
-
-  .gold-tabel {
-    display: block;
-    overflow-x: auto;
-
-    white-space: nowrap;
-    /* ไม่ให้ขึ้นบรรทัดใหม่ */
-  }
-
-  .header-inner {
-    padding: 0 40px;
-  }
-  
-}
-
-
-
-/* หน้าจอสำหรับมือถือ 1-576 --------------------------------------------------------------------- */
-@media (max-width: 576px) {
-  .site-header {
-    background-color: rgb(255, 0, 255);
-  }
-  
-  /* hamburger menu -------------------------------------------------------------------------- */
-  #hamburger-menu {
-    display: block;
-    width: 30px;
-    height: 25px;
-    position: relative;
-
-    z-index: 1000;
-    /* อยู่บนสุดตลอดเวลา */
-    
-    cursor: pointer;
-    /* เปลี่ยนเคอร์เซอร์เมื่อชี้ให้เป็นนิ้ว */
-
-    margin-left: 40px;
-  }
-
-  /* สร้างเส้นตรง ------------------------- */
-  #hamburger-menu span,
-  #hamburger-menu span:before,
-  #hamburger-menu span:after {
-    background-color: #ffffff;
-    height: 3px;
-    width: 100%;
-
-    display: block;
-    position: absolute;
-    content: "";
-    transition: all 0.5 ease;
-  }
-
-  /* จัดตำแหน่งเส้น----------------- */
-  #hamburger-menu span {
-    top: 11px;
-  }
-
-  #hamburger-menu span:before {
-    top: -8px;
-  }
-
-  #hamburger-menu span:after {
-    top: 8px;
-  }
-
-  /* สร้างเส้น X */
-  #hamburger-menu.close span {
-    background: transparent;
-  }
-
-  #hamburger-menu.close span:before {
-    transform: rotate(45deg);
-    top: 0;
-  }
-
-  #hamburger-menu.close span:after {
-    transform: rotate(-45deg);
-    top: 0;
-  }
-
-  /* ซ่อนเมนูหลัก --------------------------- */
-  #menu {
-    display: none;
-    flex-direction: column;
-  }
-
-  #menu.overlay {
-    display: flex;
-  }
-
-  /* การสลับตำแหน่ง item */
-  /* order จะเรียงจากน้อยไปมาก */
-  .order-box-image {order: 3 }
-  .order-box-table {order: 1 }
-  .order-box-form {order: 2 }
-
-
-  .sidebar{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .order-w-intro {order: -5 }
-  .order-w-f-green {order: -1 }
-  .order-w-f-purple {order: -2 }
-  .order-w-fb {order: -4 }
-  .order-w-sp {order: -3 }
-  
 }

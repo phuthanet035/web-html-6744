@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: blue;
+        }
+
+        .container {
+            width: 1000px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .head-top-name {
+            color: aliceblue;
+            font-weight: 500;
+            font-style: oblique;
+
+            background-color: rgba(255, 255, 255, 0.271);
+
+            padding: 16px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .middle-information {}
+
+        .card-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2, minmax(350px, 1fr));
+            margin-top: 20px;
+
+
+        }
+
+        .card {
+            background-color: aliceblue;
+            border-radius: 15px;
+
+            width: 100%;
+            height: 500px;
+            backdrop-filter: blur(10px);
+
+            transition: all 0.3 ease;
+
+        }
+
+        pre {
+            font-weight: 500;
+            color: darkgray;
+        }
+
+        .image-preple {
+            width: 220px;
+            height: 150px;
+            max-width: 100%;
+
+            padding: 10px;
+
+            border-radius: 50%;
+
+            object-fit: fill;
+        }
+
+        .font-text {
+            color: darkgray;
+            padding: 10px;
+            line-height: 2;
+        }
+
+        .font-text-footer {
+            color: rgb(255, 255, 255);
+            padding: 40px;
+            line-height: 2;
+            text-align: center;
+            
+        }
+
+        @media (max-width: 768px) {
+
+            html {
+                padding: 20px;
+            }
+
+
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+           
+        }
+
+        footer {
+            width: 100%;
+            background-color: black;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="head-top-name">Phuthanet</h1>
+        <div class="card-grid">
+            <div class="card">
+                <img src="files/download (3).jpg" alt="" class="image-preple">
+
+                <p class="font-text">
+                    ยัดห่า" หรือ เอฟ-กิตติศักดิ์ เวชประสาร (เกิด 18 ก.พ. 2527)
+                    เป็นนักแสดงพิธีกร และดาวตลกโซเชียลชื่อดัง
+                    มีชื่อเสียงโด่งดังจากการเป็นสมาชิกแก๊งค์ "Fedfe" (เฟ็ดเฟ่)
+                    ซึ่งโดดเด่นด้วยสไตล์การทำคลิปตลกโปกฮาแนวฮาร์ดคอร์และเป็นกันเอง
+                    นอกจากนี้ยังมีผลงานการแสดงภาพยนตร์หลายเรื่อง
+                    อาทิ สาระแน เลิฟยูววว, เลิฟอะรูมิไลค์ รักอะไรไม่รู้
+                </p>
+
+            </div>
+
+            <div class="card">
+                <img src="files/download (3).jpg" alt="" class="image-preple">
+
+                <p class="font-text">
+                    ยัดห่า" หรือ เอฟ-กิตติศักดิ์ เวชประสาร (เกิด 18 ก.พ. 2527)
+                    เป็นนักแสดงพิธีกร และดาวตลกโซเชียลชื่อดัง
+                    มีชื่อเสียงโด่งดังจากการเป็นสมาชิกแก๊งค์ "Fedfe" (เฟ็ดเฟ่)
+                    ซึ่งโดดเด่นด้วยสไตล์การทำคลิปตลกโปกฮาแนวฮาร์ดคอร์และเป็นกันเอง
+                    นอกจากนี้ยังมีผลงานการแสดงภาพยนตร์หลายเรื่อง
+                    อาทิ สาระแน เลิฟยูววว, เลิฟอะรูมิไลค์ รักอะไรไม่รู้
+                </p>
+
+            </div>
+
+            <div class="card">
+                <img src="files/download (3).jpg" alt="" class="image-preple">
+
+                <p class="font-text">
+                    ยัดห่า" หรือ เอฟ-กิตติศักดิ์ เวชประสาร (เกิด 18 ก.พ. 2527)
+                    เป็นนักแสดงพิธีกร และดาวตลกโซเชียลชื่อดัง
+                    มีชื่อเสียงโด่งดังจากการเป็นสมาชิกแก๊งค์ "Fedfe" (เฟ็ดเฟ่)
+                    ซึ่งโดดเด่นด้วยสไตล์การทำคลิปตลกโปกฮาแนวฮาร์ดคอร์และเป็นกันเอง
+                    นอกจากนี้ยังมีผลงานการแสดงภาพยนตร์หลายเรื่อง
+                    อาทิ สาระแน เลิฟยูววว, เลิฟอะรูมิไลค์ รักอะไรไม่รู้
+                </p>
+
+            </div>
+
+            <div class="card">
+                <img src="files/download (3).jpg" alt="" class="image-preple">
+
+                <p class="font-text">
+                    ยัดห่า" หรือ เอฟ-กิตติศักดิ์ เวชประสาร (เกิด 18 ก.พ. 2527)
+                    เป็นนักแสดงพิธีกร และดาวตลกโซเชียลชื่อดัง
+                    มีชื่อเสียงโด่งดังจากการเป็นสมาชิกแก๊งค์ "Fedfe" (เฟ็ดเฟ่)
+                    ซึ่งโดดเด่นด้วยสไตล์การทำคลิปตลกโปกฮาแนวฮาร์ดคอร์และเป็นกันเอง
+                    นอกจากนี้ยังมีผลงานการแสดงภาพยนตร์หลายเรื่อง
+                    อาทิ สาระแน เลิฟยูววว, เลิฟอะรูมิไลค์ รักอะไรไม่รู้
+                </p>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer>
+        <p class="font-text-footer">ขอบคุณสำหรับทุกท่านที่เข้ามาชม</p>
+
+    </footer>
+
+</body>
+
+</html>

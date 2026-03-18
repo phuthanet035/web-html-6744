@@ -42,21 +42,26 @@
     <!-- Navber -->
     <nav class="main-nav">
         <div class="wrapper">
-            <ul class="nav-menu">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">AI Technology</a></li>
-                <li><a href="#">Machine Learning</a></li>
-                <li><a href="#">Deep Learning</a></li>
-                <li><a href="#">AI Tools</a></li>
-                <li><a href="#">AI News</a></li>
-            </ul>
+            <div id="hamburger-menu">
+                <span></span>
+            </div>
+            <div id="menu">
+                <ul class="nav-menu" id="1">
+                    <li><a href="#1" class="active">Home</a></li>
+                    <li><a href="#2">AI Technology</a></li>
+                    <li><a href="#3">Machine Learning</a></li>
+                    <li><a href="#4">Deep Learning</a></li>
+                    <li><a href="W11_design_figma_mypet.html">AI Tools</a></li>
+                    <li><a href="#contact">AI News</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <div class="hero-content">
         <div class="wrapper">
-            <h2 class="hero-title">🚀 เนื้อหาแนะนำสำหรับคุณ</h2>
+            <h2 class="hero-title" id="3">🚀 เนื้อหาแนะนำสำหรับคุณ</h2>
 
             <div class="hero-grid">
                 <div class="hero-item">
@@ -110,7 +115,7 @@
                 <!-- left -->
                 <main class="post-list">
                     <!-- card1 = Image -->
-                    <div class="card">
+                    <div class="card order-box-image" id="2">
                         <p class="post-headline">CATEGORY ARCHIVES: <strong>RESPONSIVE DESIGN</strong></p>
 
                         <div class="post-header">
@@ -145,7 +150,7 @@
                     </div>
 
                     <!-- card2 = Table -->
-                    <div class="card">
+                    <div class="card order-box-table" id="4">
                         <p class="post-headline">CATEGORY ARCHIVES: <strong>CSS DISPLAY PROPERTY</strong></p>
 
                         <div class="post-header">
@@ -233,7 +238,7 @@
 
 
                     <!-- Card3 = Form -->
-                    <div class="card">
+                    <div class="card order-box-form" id="contact">
                         <h2 style="text-align: center;">📞 ติดต่อเรา</h2>
 
                         <!-- ถ้าคิดเยอะต้องเขียน class ใหม่ ถ้าอย่างเพิ่มสี ฟอร์น เงา -->
@@ -334,9 +339,9 @@
 
                 </main>
                 <!-- right -->
-                <aside>
+                <aside class="sidebar">
                     <!-- widget01 -->
-                    <div class="widget">
+                    <div class="widget order-w-intro">
                         <div class="widget-title">สวัสดีครับ ยินดีต้อนรับ</div>
                         <p class="post-description">
                             ผมชื่อ Suksawat เขียนบล็อกเกี่ยวกับ Startup การตลาด การเขียนโปรแกรม และเทคโนโลยี AI สำหรับ
@@ -350,7 +355,7 @@
                     </div>
 
                     <!-- widget02 -->
-                    <div class="widget">
+                    <div class="widget order-w-f-green">
                         <div class="contact-form-main-card-right">
                             <h5 style="text-align: center;" class="for-label-font-Head">📧 รับข่าวสารใหม่</h5>
                             <div class="form-group">
@@ -375,7 +380,7 @@
                     </div>
 
                     <!-- widget03 -->
-                    <div class="widget">
+                    <div class="widget order-w-f-purple">
                         <div class="contact-form-main-card-second-right">
                             <h5 style="text-align: center;" class="for-label-font-Head">💬 ติดต่อด่วน</h5>
                             <div class="form-group">
@@ -403,7 +408,7 @@
 
                     </div>
                     <!-- widget04 -->
-                    <div class="widget">
+                    <div class="widget order-w-f-fb">
                         <div class="widget-title">Facebook Like</div>
                         <p class="auther-follow">
                             กล่อง Facebook Like (ตัวอย่าง)
@@ -412,7 +417,7 @@
                     </div>
 
                     <!-- widget05 -->
-                    <div class="widget">
+                    <div class="widget order-w-sp">
                         <div class="widget-title">Sponsor</div>
                         <p class="sponsor-photo">พื้นที่โฆษณา / วิดีโอ</p>
                     </div>
@@ -423,7 +428,7 @@
             </div>
 
             <!-- ราคาทอง-Thble -->
-            <div class="card" style="margin-top: 30px;">
+            <div class="card card-margin">
                 <p class="post-headline">CATEGORY ARCHIVES: <strong>RESPONSIVE DESIGN</strong></p>
                  <div class="post-header">
                             <h3>ตารางสรุปราคาทองรายเดือนต่ำสุด-สูงสุดตั้งแต่ปี 2568-2569</h3>
@@ -528,6 +533,29 @@
         <p>© 2025 Suksawat — All rights reserved.</p>
         Designed for educational/demo purposes • <a href="">Contact</a>
     </footer>
+
+     <script>
+        var burgerMenu = document.getElementById('hamburger-menu');
+        var overlay = document.getElementById('menu');
+
+        burgerMenu.addEventListener('click', function () {
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+        });
+
+        // ปิดเมนูเมื่อกดลิงก์
+        var menuLinks = document.querySelectorAll('#menu a');
+
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                burgerMenu.classList.remove("close");
+                overlay.classList.remove("overlay");
+            });
+        });
+
+
+    </script>
+
 </body>
 
 </html>
